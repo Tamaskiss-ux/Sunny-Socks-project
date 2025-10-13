@@ -30,6 +30,7 @@ body
 
 a
 {
+
     color: #1e407a;
     text-decoration: none;
 }
@@ -42,6 +43,10 @@ main
     grid-template-columns: 1fr 1fr;
 }
 
+b
+{
+    font-weight: bolder;
+}
 
 /*Header design start*/
 
