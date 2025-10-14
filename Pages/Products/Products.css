@@ -37,6 +37,17 @@ a
 
 /*Main body alignment and fonts end*/
 
+main
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+b
+{
+    font-weight: bolder;
+}
+
 /*Header design start*/
 
 header
@@ -73,62 +84,10 @@ header > #links
 
 /*Main design start*/
 
-#mainlogo
+h1
 {
-    margin-top: 25px;
-    margin-left: 50px;
-    width: 335px;
-}
-
-main
-{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-}
-
-main > div 
-{
-    margin: 50px;
-}
-
-b
-{
-    font-weight: bolder;
-}
-
-.pride
-{
-    grid-row: 2;
-    grid-column: 1;
-    display: block;
-    margin: auto;
-    width: 50%;
-}
-
-.promoimage
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-row: 1;
-    grid-column: 2;
-}
-
-#maincatalogus
-{
-    width: 500px;
-}
-
-.secoundtext
-{
-    grid-row: 2;
-    grid-column: 2;
-}
-
-.secoundtext > p > a
-{
-    color: #f15b39;
+    font-family: "Nexa Bold";
+    color: #e990b9;
 }
 
 /*Main design end*/
