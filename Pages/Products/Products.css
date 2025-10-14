@@ -19,7 +19,7 @@ body
     background-color: #51b2a2;
     margin: 0;
     padding: 0;
-    margin-left: 50px;
+    margin-left: 3%;
     color: #1e407a;
 }
 
@@ -54,7 +54,7 @@ header
     display: grid;
     border-bottom: 10px solid #fecd3e;
     grid-template-columns: 4fr 5fr;
-    padding-left: 45px;
+    padding-left: 3%;
 }
 
 header > #headerlogo

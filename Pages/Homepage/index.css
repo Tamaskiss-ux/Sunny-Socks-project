@@ -19,7 +19,7 @@ body
     background-color: #51b2a2;
     margin: 0;
     padding: 0;
-    margin-left: 50px;
+    margin-left: 3%;
     color: #1e407a;
 }
 
@@ -44,7 +44,7 @@ header
     display: grid;
     border-bottom: 10px solid #fecd3e;
     grid-template-columns: 4fr 5fr;
-    padding-left: 45px;
+    padding-left: 3%;
 }
 
 header > #headerlogo
@@ -73,23 +73,22 @@ header > #links
 
 /*Main design start*/
 
+main
+{
+    margin: 5%;
+}
+
 #mainlogo
 {
-    margin-top: 25px;
-    margin-left: 50px;
     width: 335px;
 }
 
 .gridbox
 {
+    gap: 1%;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-}
-
-.gridbox > div 
-{
-    margin: 50px;
 }
 
 b
@@ -140,7 +139,7 @@ footer
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 45px;
+    padding-left: 3%;
     font-size: 24px;
     font-family: "Nexa Bold";
     border-top: 10px solid #fecd3e;
