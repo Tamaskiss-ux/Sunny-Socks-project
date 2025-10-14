@@ -86,12 +86,55 @@ header > #links
 
 #mainlogo
 {
+    margin-top: 25px;
+    margin-left: 50px;
     width: 335px;
+}
+
+main
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+main > div 
+{
+    margin: 50px;
+}
+
+.pride
+{
+    grid-row: 2;
+    grid-column: 1;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.promoimage
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 2;
 }
 
 #maincatalogus
 {
     width: 500px;
+}
+
+.secoundtext
+{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.secoundtext > p > a
+{
+    color: #f15b39;
 }
 
 /*Main design end*/
