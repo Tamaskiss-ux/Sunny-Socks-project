@@ -80,30 +80,31 @@ header > #links
     width: 335px;
 }
 
-main
+.gridbox
 {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 }
 
-main > div 
+.gridbox > div 
 {
     margin: 50px;
 }
 
 b
 {
+    font-family: "Nexa Bold";
     font-weight: bolder;
 }
 
 .pride
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-row: 2;
     grid-column: 1;
-    display: block;
-    margin: auto;
-    width: 50%;
 }
 
 .promoimage
