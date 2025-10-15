@@ -36,17 +36,6 @@ a
 
 /*Main body alignment and fonts end*/
 
-main
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-b
-{
-    font-weight: bolder;
-}
-
 /*Header design start*/
 
 header
@@ -83,11 +72,134 @@ header > #links
 
 /*Main design start*/
 
+/* Don't change this!*/
+main
+{
+    margin: 5%;
+}
+/* Don't change this!*/
+
 h1
 {
     font-family: "Nexa Bold";
     color: #e990b9;
 }
+
+.table
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.normalandstriped
+{
+    text-wrap: wrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "Nexa Bold";
+}
+
+.Description
+{
+    grid-column: 1 / span 2;
+}
+
+.Available
+{
+    font-family: "Nexa Bold";
+}
+
+.colors
+{
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2%;
+}
+
+.colors > a 
+{
+    height: 175px;
+    width: 40px;
+    border-radius: 1rem;
+    margin-inline: auto ;
+}
+
+.blue
+{
+    background-color: #1e407a;
+}
+
+.green
+{
+    background-color: #51b2a2;
+}
+
+.pink
+{
+    background-color: #e990b9;
+}
+
+.yellow
+{
+    background-color: #fecd3e;
+}
+
+.red
+{
+    background-color: #f15b39;
+}
+
+/*Left table start*/
+
+.firstcolumn
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: none;
+    border-right: #51b2a2 solid 10px;
+    padding-inline: 3%;
+}
+
+.firstcolumn > div > img
+{
+    width: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Left table end*/
+
+/*Right table start*/
+
+.secoundcolumn
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: none;
+    border-left: #51b2a2 solid 10px;
+    padding-inline: 3%;
+}
+
+.secoundcolumn > div > img
+{
+    width: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secoundcolumn > .Normal
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "Nexa Bold";
+}
+
+/*Right table end*/
 
 /*Main design end*/
 
@@ -97,7 +209,7 @@ footer
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 45px;
+    padding-left: 3%;
     font-size: 24px;
     font-family: "Nexa Bold";
     border-top: 10px solid #fecd3e;

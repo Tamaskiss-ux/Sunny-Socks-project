@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Products</title>
+    <!-- Don't forget to change the name for the title of the page and the css link!-->
     <link rel="stylesheet" href="Products.css">
     <link rel="stylesheet" href="confirmation.css">
 </head>
@@ -11,7 +12,9 @@
     <div class="content">
         <!-- Only change things in the header if you are going to add in more content to the top but than add it in to the css as well-->
         <header>
-            <div id="headerlogo"><img id="headerlogoimg" src="../../Fontsandimages/Logos/png/sunny_logos_orange.png" alt="Logos Orange"></div>
+            <div id="headerlogo">
+                <img id="headerlogoimg" src="../../Fontsandimages/Logos/png/sunny_logos_orange.png" alt="Logos Orange">
+            </div>
             <div id="links">
                 <div><a href="">Products</a></div>
                 <div><a href="">Sustainability</a></div>
@@ -19,11 +22,49 @@
                 <div><a href="">About us</a></div>
             </div>
         </header>
-        <h1>Our Products</h1>
 
         <!-- You can add in anything here and to the css part as well-->
         <main>
-            
+           <h1>Our Products</h1>
+
+           <div class="table">
+                <div class="firstcolumn">
+                    <div>
+                        <img src="../../Fontsandimages/catalogus/catalogus/Sunny_socks_pink_01.jpg" alt="Sunny_socks_pink_01">
+                    </div>
+                    <p class="normalandstriped">Classic Striped Socks*</p>
+                    <p class="Description">Our striped socks provide a fun spin on our classic socks.
+                         They are made from 100% cotton, ensuring that your feet stay warm even on the coldest days.
+                    </p>
+                    <p class="Available">Available in:</p>
+                    <div class="colors">
+                        <a href="" class="blue"></a>
+                        <a href="" class="green"></a>
+                        <a href="" class="pink"></a>
+                        <a href="" class="yellow"></a>
+                        <a href="" class="red"></a>
+                    </div>
+                </div>
+
+                <div class="secoundcolumn">
+                    <div>
+                        <img src="../../Fontsandimages/catalogus/catalogus/Sunny_socks_uni_pink.jpg" alt="Sunny_socks_pink_01">
+                    </div>
+                    <p class="normalandstriped">Classic Socks*</p>
+                    <p class="Description">
+                        The Classics have always been Sunny’s signature style.
+                         They are made from 100% cotton, ensuring that your feet stay warm even on the coldest days.
+                    </p>
+                    <p class="Available">Available in:</p>
+                    <div class="colors">
+                        <a href="" class="blue"></a>
+                        <a href="" class="green"></a>
+                        <a href="" class="pink"></a>
+                        <a href="" class="yellow"></a>
+                        <a href="" class="red"></a>
+                    </div>
+                </div>
+           </div>
         </main>
 
         <!--Don't change things here-->
@@ -47,4 +88,3 @@
     </div>
 </body>
 </html>
-
