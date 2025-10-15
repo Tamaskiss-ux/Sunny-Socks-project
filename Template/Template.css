@@ -30,7 +30,6 @@ body
 
 a
 {
-
     color: #1e407a;
     text-decoration: none;
 }
@@ -80,58 +79,6 @@ main
 }
 /* Don't change this!*/
 
-#mainlogo
-{
-    width: 335px;
-}
-
-.gridbox
-{
-    gap: 1%;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-}
-
-b
-{
-    font-family: "Nexa Bold";
-    font-weight: bolder;
-}
-
-.pride
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-row: 2;
-    grid-column: 1;
-}
-
-.promoimage
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-row: 1;
-    grid-column: 2;
-}
-
-#maincatalogus
-{
-    width: 500px;
-}
-
-.secoundtext
-{
-    grid-row: 2;
-    grid-column: 2;
-}
-
-.secoundtext > p > a
-{
-    color: #f15b39;
-}
 
 /*Main design end*/
 
