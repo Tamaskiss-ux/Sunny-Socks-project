@@ -99,10 +99,11 @@ header > #links
     display: grid;
     justify-content: center;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 48% 48%;
     gap: 15px;
     margin-left: 2%;
     margin-right: 2%;
+    margin-bottom: 2%;
 }
 
 .items-in-grid
@@ -169,6 +170,7 @@ footer
     font-size: 24px;
     font-family: "Nexa Bold";
     border-top: 10px solid #fecd3e;
+    color: #1e407a;
 }
 
 footer > div > p
