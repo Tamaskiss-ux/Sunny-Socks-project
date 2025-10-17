@@ -3,18 +3,18 @@
 @font-face
 {
     font-family: "Nexa Light";
-    src: url(../../Fontsandimages/Fonts/Nexa\ Light.otf);
+    src: url(../../../Fontsandimages/Fonts/Nexa\ Light.otf);
 }
 
 @font-face
 {
     font-family: "Nexa Bold";
-    src: url(../../Fontsandimages/Fonts/Nexa\ Bold.otf);
+    src: url(../../../Fontsandimages/Fonts/Nexa\ Bold.otf);
 }
 
 body
 {
-    font-size: 32px;
+    font-size: 24px ;
     font-family: "Nexa Bold";
     background-color: #51b2a2;
     margin: 0;
@@ -58,6 +58,11 @@ header > #headerlogo
     width: 226px;
 }
 
+#headerlogoimg
+{
+    width: 226px;
+}
+
 header > #links
 {
     display: grid;
@@ -79,41 +84,28 @@ main
 }
 /* Don't change this!*/
 
-.images
+.middle
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-inline: 10%;
+    margin-inline: 20%;
 }
 
-.images > a >img
+.middle > h1
 {
-    width: 100%;
+    text-align: center;
+    text-wrap: wrap;
 }
 
-.blue
+.middle > a
 {
-    margin-top: 50%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.green
+.middle > a > img
 {
-    margin-top: 100%
-}
-
-.pink
-{
-    margin-top: 50%
-}
-
-.yellow
-{
-    margin-top: 0%
-}
-
-.red
-{
-    margin-top: 50%
+    height: 600px;
 }
 
 /*Main design end*/
