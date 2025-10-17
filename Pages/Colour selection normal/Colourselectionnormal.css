@@ -46,6 +46,13 @@ header
     padding-left: 3%;
 }
 
+header > #headerlogo
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 header > #headerlogo > a
 {
     display: flex;

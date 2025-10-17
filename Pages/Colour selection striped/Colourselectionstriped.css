@@ -46,7 +46,7 @@ header
     padding-left: 3%;
 }
 
-header > #headerlogo > a
+header > #headerlogo
 {
     display: flex;
     align-items: center;
