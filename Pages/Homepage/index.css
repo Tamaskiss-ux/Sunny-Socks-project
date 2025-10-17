@@ -53,7 +53,7 @@ header > #headerlogo
     justify-content: flex-start;
 }
 
-header > #headerlogo > a
+header > #headerlogo 
 {
     display: flex;
     align-items: center;
