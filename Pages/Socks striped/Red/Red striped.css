@@ -1,0 +1,164 @@
+/*Main body alignment and fonts start*/
+
+@font-face
+{
+    font-family: "Nexa Light";
+    src: url(../../../Fontsandimages/Fonts/Nexa\ Light.otf);
+}
+
+@font-face
+{
+    font-family: "Nexa Bold";
+    src: url(../../../Fontsandimages/Fonts/Nexa\ Bold.otf);
+}
+
+body
+{
+    font-size: 24px ;
+    font-family: "Nexa Bold";
+    background-color: #51b2a2;
+    margin: 0;
+    padding: 0;
+    margin-left: 3%;
+    color: #1e407a;
+}
+
+.content
+{
+    background-color: white;
+}
+
+a
+{
+    color: #1e407a;
+    text-decoration: none;
+}
+
+/*Main body alignment and fonts end*/
+
+/*Header design start*/
+
+header
+{
+    display: grid;
+    border-bottom: 10px solid #fecd3e;
+    grid-template-columns: 4fr 5fr;
+    padding-left: 3%;
+}
+
+header > #headerlogo
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#headerlogoimg
+{
+    width: 226px;
+}
+
+#headerlogoimg
+{
+    width: 226px;
+}
+
+header > #links
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-content: center;
+    font-family: "Nexa Bold";
+    font-size: 24px;
+}
+
+h1 > a
+{
+    color: #f15b39;
+}
+
+h1
+{
+    color: #f15b39;
+}
+
+/*Header design end*/
+
+/*Main design start*/
+
+/* Don't change this!*/
+main
+{
+    margin: 5%;
+}
+/* Don't change this!*/
+
+.middle
+{
+    margin-inline: 20%;
+}
+
+.middle > h1
+{
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.middle > a
+{
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle > a > img
+{
+    height: 600px;
+}
+
+/*Main design end*/
+
+/*Footer design start*/
+
+footer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 3%;
+    font-size: 24px;
+    font-family: "Nexa Bold";
+    border-top: 10px solid #fecd3e;
+}
+
+footer > div > p
+{
+    text-align: center;
+    align-content: center;
+}
+
+.footerleftalign
+{
+    width: 250px;
+}
+
+.footerleftalign > p
+{
+    margin: 0;
+    text-align: left;
+}
+
+.icons
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer > .icons > div > a > img
+{
+    width: 50px;
+}
+
+/*Footer design end*/
