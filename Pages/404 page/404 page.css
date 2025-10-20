@@ -84,6 +84,42 @@ header > #links
     align-items: center;
 }
 
+#flexText
+{
+    margin-left: 20px;
+}
+
+#flexMainTitle
+{
+    font-family: "Nexa Bold";
+    font-size: 64px;
+    margin-bottom: 0;
+}
+
+#flexSubtitle
+{
+    font-family: "Nexa Bold";
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flexSmallText1
+{
+    margin-bottom: 0;
+}
+
+#flexSmallText2
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flexImg > img
+{
+    width: 50%;
+}
+
 
 /*Body design end*/
 
