@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- External CSS file -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Sunny – About us</title>
+</head>
+<body>
+    <!-- ===== MAIN CONTAINER START ===== -->
+    <div class="main bg border-left">
+        <!-- ===== DESKTOP NAVIGATION BAR ===== -->
+        <nav class="desktop-nav">
+            <div class="nav-inner">
+                <!-- Website Logo -->
+                <div class="brand">
+                    <a href="index.html"><img src="../../Fontsandimages/logo.png"></a>
+                </div>
+                <!-- Navigation Menu (Desktop View) -->
+                <div class="menu">
+                    <a href="#">Products</a>
+                    <a href="#">Sustainability</a>
+                    <a href="#">Contact</a>
+                    <a href="index-dark.html" class="active">About us</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ===== MOBILE NAVIGATION BAR ===== -->
+        <div class="main-mobile">
+            <nav class="mobile-nav">
+                <div class="nav-inner">
+                    <!-- Logo -->
+                    <div class="brand">
+                        <a href="index.html"><img src="../../Fontsandimages/logo.png"></a>
+                    </div>
+                    <!-- Toggle button for mobile menu -->
+                    <button class="toggle" onclick="toggleVisibility()">
+                        <img src="../../Fontsandimages/toggle-icon.png">
+                    </button>
+                </div>
+
+                <!-- Collapsible Mobile Menu -->
+                <div class="menu" id="myElement" style="display:none;">
+                    <a href="#">Products</a>
+                    <a href="#">Sustainability</a>
+                    <a href="#">Contact</a>
+                    <a href="index-dark.html" class="active">About us</a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- ===== MAIN PAGE CONTENT START ===== -->
+        <div class="wrapper bg-blues">
+            
+            <!-- ===== MISSION SECTION ===== -->
+            <div class="row">
+                <div class="col-1">
+                    <h2>Our Mission</h2>
+                    <p class="text-white">
+                        At Sunny Socks, we aim to <strong>brighten your day</strong>, by producing ethically produced, high quality socks.
+                    </p>
+                    <p class="text-white mt-2">
+                        Our products are beneficial for all people involved. The production is <strong>considerate of our planet</strong> and the people involved in the process. By ensuring that our materials are of the <strong>highest quality</strong>, we are able to create socks at <strong>affordable prices</strong>.
+                    </p>
+                </div>
+
+                <!-- Mission Section Image -->
+                <div class="col-2 d-flex jce pt pr pl">
+                    <img class="img" src="../../Fontsandimages/1.png">
+                </div>
+            </div>
+
+            <!-- ===== VISION SECTION ===== -->
+            <div class="row mt-3 flex-dir">
+                <!-- Vision Section Image -->
+                <div class="col-2 d-flex jcc pt pr pl">
+                    <img class="img" src="../../Fontsandimages/2.png">
+                </div>
+
+                <!-- Vision Section Text -->
+                <div class="col-1">
+                    <h2>Vision</h2>
+                    <p class="text-white">
+                        <strong>We value you</strong>. Your comfort is of utmost importance to us, and pushes us to be better, to do better. 
+                    </p>
+                    <p class="text-white mt-2">
+                        We believe that our products should be <strong>accessible to everyone</strong>, regardless of price. Your <strong>loyalty and compassion</strong> enables us to demonstrate what we stand for every day.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ===== PRIDE SECTION ===== -->
+            <div class="row mt-3">
+                <div class="col-1">
+                    <h2>Pride</h2>
+                    <p class="text-white">
+                        Through our newest project, the Pride Collection we aim to show <strong>we stand with all of our customers</strong>.
+                    </p>
+                    <p class="text-white mt-2">
+                        Family, friends, colleagues - we are all about accepting everyone as they are.
+                    </p>
+                </div>
+
+                <!-- Pride Section Image -->
+                <div class="col-2 d-flex jce pt">
+                    <img class="img" style="width: 50% !important;" src="../../Fontsandimages/3.png">
+                </div>
+            </div>
+
+            <!-- ===== FOOTER SECTION ===== -->
+            <footer>
+                <!-- Address Column -->
+                <div class="col-1">
+                    <p>7811 AP, Raadhuisplein 1, </p>
+                    <p>Emmen, Nederland</p>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="col-2 d-flex aic">
+                    <span>Follow us:</span>
+                    <a href="https://www.facebook.com/"><img class="social-icon" src="../../Fontsandimages/icon1.png"></a>
+                    <a href="https://www.instagram.com/"><img class="social-icon" src="../../Fontsandimages/icon2.png"></a>
+                    <a href="https://www.linkedin.com/"><img class="social-icon" src="../../Fontsandimages/icon3.png"></a>
+                    <a href="https://x.com/"><img class="social-icon" src="../../Fontsandimages/icon4.png"></a>
+                </div>
+
+                <!-- Copyright -->
+                <div class="col-3 text-center">
+                    <p>© 2025 Sunny Socks</p>
+                </div>
+            </footer>
+        </div>
+        <!-- ===== MAIN PAGE CONTENT END ===== -->
+    </div>
+    <!-- ===== MAIN CONTAINER END ===== -->
+<!-- Chatbot Container -->
+    <div class="chatbot-container">
+    <button id="chatbot-toggle" class="chatbot-toggle">💬</button>
+
+    <div class="chatbot-popup" id="chatbot-popup">
+      <div class="chat-header">
+        <h3>Support</h3>
+        <button id="chatbot-close" class="close-btn">−</button>
+      </div>
+
+      <div class="chat-body" id="chat-body">
+        <div class="bot-msg">👋 Hi there! How can I help you today?</div>
+      </div>
+
+      <div class="quick-questions" id="quick-questions">
+        <button class="quick-btn">Shipping Info</button>
+        <button class="quick-btn">Return Policy</button>
+        <button class="quick-btn">Pride Collection</button>
+        <button class="quick-btn">Sustainability</button>
+      </div>
+
+      <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button id="send-btn">➤</button>
+      </div>
+    </div>
+  </div>
+    </div>
+    <!-- Chatbot Container End -->
+    <!-- External JavaScript File -->
+    <script src="index.js"></script>
+</body>
+</html>
