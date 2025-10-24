@@ -113,7 +113,14 @@ body{
   background:rgba(148,163,184,.12); outline:none; color:#fff;
 }
 
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
 
+.chatbot-popup {
+  animation: slideUp 0.4s ease;
+}
 
 .mt-1{
   margin-top: 10px !important;
