@@ -21,7 +21,19 @@ body{
   justify-content: center;
   margin: 0px;
 }
+/* Add smooth hover for buttons and links */
+.menu a,
+.quick-btn,
+.chat-input button {
+  transition: all 0.3s ease-in-out;
+}
 
+/* Button hover glow */
+.chat-input button:hover,
+.quick-btn:hover {
+  background-color: #F15B39;
+  transform: scale(1.05);
+}
 .main{
   width: 1280px;
   background-size:cover;
