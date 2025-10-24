@@ -28,7 +28,18 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 5s ease;
 }
+
+.chatbot-popup.active {
+  display: flex;
+  opacity: 1;
+  transform: scale(1);
+}
+
+
 
 .chat-header {
   background-color: #0F203D;

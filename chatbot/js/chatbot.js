@@ -6,25 +6,25 @@ const userInput = document.getElementById("user-input");
 const chatBody = document.getElementById("chat-body");
 const quickBtns = document.querySelectorAll(".quick-btn");
 
-// toggle open/close
+// ✅ toggle open/close using class
 toggleBtn.addEventListener("click", () => {
-  chatPopup.style.display = chatPopup.style.display === "flex" ? "none" : "flex";
+  chatPopup.classList.toggle("active");
 });
 
 closeBtn.addEventListener("click", () => {
-  chatPopup.style.display = "none";
+  chatPopup.classList.remove("active");
 });
 
-// function to add messages
+// ✅ Add Message Function
 function addMessage(message, sender) {
   const msgDiv = document.createElement("div");
   msgDiv.classList.add(sender === "user" ? "user-msg" : "bot-msg");
   msgDiv.innerText = message;
   chatBody.appendChild(msgDiv);
-  chatBody.scrollTop = chatBody.scrollHeight; // always scroll to bottom
+  chatBody.scrollTop = chatBody.scrollHeight;
 }
 
-// function for bot replies
+// ✅ Bot Reply Function
 function botReply(message) {
   const lower = message.toLowerCase();
   let reply = "";
@@ -39,7 +39,7 @@ function botReply(message) {
   addMessage(reply, "bot");
 }
 
-// send message
+// ✅ Send Message
 sendBtn.addEventListener("click", () => {
   const message = userInput.value.trim();
   if (message) {
@@ -49,7 +49,7 @@ sendBtn.addEventListener("click", () => {
   }
 });
 
-// quick question clicks
+// ✅ Quick Question Clicks
 quickBtns.forEach(btn => {
   btn.addEventListener("click", () => {
     const text = btn.innerText;
