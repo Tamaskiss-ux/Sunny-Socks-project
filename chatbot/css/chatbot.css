@@ -26,6 +26,15 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.chatbot-popup.active {
+  display: flex;
+  opacity: 1;
+  transform: scale(1);
 }
 
 .chat-header {
