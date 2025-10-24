@@ -1,12 +1,15 @@
 function toggleVisibility() {
-	var element = document.getElementById("myElement");
-	if (element.style.display === "none") {
-		element.style.display = "block";
-		
-	} else {
-		element.style.display = "none";
-	}
+  const element = document.getElementById("myElement");
+  if (element.style.display === "block") {
+    element.style.opacity = "0";
+    setTimeout(() => element.style.display = "none", 300);
+  } else {
+    element.style.display = "block";
+    element.style.opacity = "0";
+    setTimeout(() => element.style.opacity = "1", 10);
+  }
 }
+
 // chatbot
 const toggleBtn = document.getElementById("chatbot-toggle");
 const chatPopup = document.getElementById("chatbot-popup");

@@ -108,6 +108,9 @@ body{
 .active{
   color: #F15B39 !important;
 }
+#myElement {
+  transition: opacity 0.3s ease-in-out;
+}
 
 .menu a:hover, .menu a:focus-visible{
   background:rgba(148,163,184,.12); outline:none; color:#fff;
