@@ -22,9 +22,22 @@ function addMessage(message, sender) {
   msgDiv.innerText = message;
   chatBody.appendChild(msgDiv);
   chatBody.scrollTop = chatBody.scrollHeight;
+  return msgDiv;
 }
 
-// ✅ Bot Reply Function
+// ✅ Typing Effect + Bot Reply Function
+function showTypingEffect(message) {
+  // Step 1: Show "Typing..."
+  const typingMsg = addMessage("Typing...", "bot");
+
+  // Step 2: Wait and then show actual reply
+  setTimeout(() => {
+    typingMsg.remove(); // remove typing text
+    botReply(message);
+  }, 3000); // typing delay 1 second
+}
+
+// ✅ Bot Reply Logic
 function botReply(message) {
   const lower = message.toLowerCase();
   let reply = "";
@@ -45,7 +58,15 @@ sendBtn.addEventListener("click", () => {
   if (message) {
     addMessage(message, "user");
     userInput.value = "";
-    setTimeout(() => botReply(message), 600);
+    showTypingEffect(message);
+  }
+});
+
+// ✅ Allow Enter key to send
+userInput.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    sendBtn.click();
   }
 });
 
@@ -54,6 +75,6 @@ quickBtns.forEach(btn => {
   btn.addEventListener("click", () => {
     const text = btn.innerText;
     addMessage(text, "user");
-    setTimeout(() => botReply(text), 500);
+    showTypingEffect(text);
   });
 });
