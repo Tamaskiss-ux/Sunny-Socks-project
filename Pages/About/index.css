@@ -104,6 +104,22 @@ body{
   transition:.2s ease;
   font-family: myfont2;
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0F203D;
+    color: white;
+  }
+  .bg-white {
+    background-color: rgba(15, 32, 61, 0.95);
+  }
+  footer {
+    background-color: #111a2e;
+  }
+  .chatbot-popup {
+    background-color: #1a2644;
+    color: white;
+  }
+}
 
 .active{
   color: #F15B39 !important;
