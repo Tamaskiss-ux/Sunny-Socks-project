@@ -140,3 +140,20 @@
   border-radius: 6px;
   cursor: pointer;
 }
+@media screen and (max-width: 500px) {
+  .chatbot-popup {
+    width: 90%;
+    height: 70vh;
+    right: 5%;
+  }
+  .chatbot-toggle {
+    background-color: #9D7501;
+    border: none;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 40px;
+    cursor: pointer;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  }
+}
