@@ -10,7 +10,10 @@ function toggleVisibility() {
   }
 }
 
-// chatbot
+
+// Chatbot Script
+
+// Get all required HTML elements
 const toggleBtn = document.getElementById("chatbot-toggle");
 const chatPopup = document.getElementById("chatbot-popup");
 const closeBtn = document.getElementById("chatbot-close");
@@ -19,54 +22,93 @@ const userInput = document.getElementById("user-input");
 const chatBody = document.getElementById("chat-body");
 const quickBtns = document.querySelectorAll(".quick-btn");
 
-// toggle open/close
-toggleBtn.addEventListener("click", () => {
-  chatPopup.style.display = chatPopup.style.display === "flex" ? "none" : "flex";
-});
-
-closeBtn.addEventListener("click", () => {
-  chatPopup.style.display = "none";
-});
-
-// function to add messages
-function addMessage(message, sender) {
-  const msgDiv = document.createElement("div");
-  msgDiv.classList.add(sender === "user" ? "user-msg" : "bot-msg");
-  msgDiv.innerText = message;
-  chatBody.appendChild(msgDiv);
-  chatBody.scrollTop = chatBody.scrollHeight; // always scroll to bottom
-}
-
-// function for bot replies
-function botReply(message) {
-  const lower = message.toLowerCase();
-  let reply = "";
-
-  if (lower.includes("shipping")) reply = "We ship worldwide! Orders usually arrive within 5–7 days.";
-  else if (lower.includes("return")) reply = "You can return your items within 30 days of purchase.";
-  else if (lower.includes("pride")) reply = "Our Pride Collection celebrates inclusivity and love for all.";
-  else if (lower.includes("sustain")) reply = "We focus on eco-friendly and sustainable products.";
-  else if (lower === "ok") reply = "Thank you for confirming!";
-  else reply = "Sorry, I do not understand your message.";
-
-  addMessage(reply, "bot");
-}
-
-// send message
-sendBtn.addEventListener("click", () => {
-  const message = userInput.value.trim();
-  if (message) {
-    addMessage(message, "user");
-    userInput.value = "";
-    setTimeout(() => botReply(message), 600);
+// Open or close the chat popup when toggle button is clicked
+toggleBtn.addEventListener("click", function () {
+  // If chat popup is visible, hide it
+  if (chatPopup.style.display === "flex") {
+    chatPopup.style.display = "none";
+  } else {
+    // Otherwise, show it
+    chatPopup.style.display = "flex";
   }
 });
 
-// quick question clicks
-quickBtns.forEach(btn => {
-  btn.addEventListener("click", () => {
-    const text = btn.innerText;
-    addMessage(text, "user");
-    setTimeout(() => botReply(text), 500);
+// Close the chat popup when the close button is clicked
+closeBtn.addEventListener("click", function () {
+  chatPopup.style.display = "none";
+});
+
+// Function to add new messages to the chat window
+function addMessage(message, sender) {
+  // Create a new <div> element for the message
+  const msgDiv = document.createElement("div");
+
+  // Add class name based on sender type (user or bot)
+  if (sender === "user") {
+    msgDiv.classList.add("user-msg");
+  } else {
+    msgDiv.classList.add("bot-msg");
+  }
+
+  // Add the actual message text inside the div
+  msgDiv.innerText = message;
+
+  // Append the message div to the chat body
+  chatBody.appendChild(msgDiv);
+
+  // Always scroll to the latest message at the bottom
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+// Function to generate bot replies based on user message
+function botReply(message) {
+  const lower = message.toLowerCase(); // Convert message to lowercase
+  let reply = ""; // Variable to store the reply text
+
+  // Check what the user message contains and set reply accordingly
+  if (lower.includes("shipping")) {
+    reply = "We ship worldwide! Orders usually arrive within 5–7 days.";
+  } else if (lower.includes("return")) {
+    reply = "You can return your items within 30 days of purchase.";
+  } else if (lower.includes("pride")) {
+    reply = "Our Pride Collection celebrates inclusivity and love for all.";
+  } else if (lower.includes("sustain")) {
+    reply = "We focus on eco-friendly and sustainable products.";
+  } else if (lower === "ok") {
+    reply = "Thank you for confirming!";
+  } else {
+    reply = "Sorry, I do not understand your message.";
+  }
+
+  // Add the bot reply to the chat window
+  addMessage(reply, "bot");
+}
+
+// Send user message when the send button is clicked
+sendBtn.addEventListener("click", function () {
+  const message = userInput.value.trim(); // Get text from input field
+
+  // Only send message if it’s not empty
+  if (message !== "") {
+    addMessage(message, "user"); // Display user message
+    userInput.value = ""; // Clear the input field
+
+    // Show bot reply after a small delay for realism
+    setTimeout(function () {
+      botReply(message);
+    }, 600);
+  }
+});
+
+// Quick button replies (predefined messages)
+quickBtns.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    const text = btn.innerText; // Get the text of the clicked button
+    addMessage(text, "user"); // Show it as a user message
+
+    // Respond with the bot message after a short delay
+    setTimeout(function () {
+      botReply(text);
+    }, 500);
   });
 });
