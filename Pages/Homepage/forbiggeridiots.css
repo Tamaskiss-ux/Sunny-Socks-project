@@ -14,7 +14,7 @@
 
 body
 {
-    font-size: 32px;
+    font-size: 96px;
     font-family: "Nexa Light";
     background-color: #51b2a2;
     margin: 0;
@@ -27,6 +27,7 @@ body
 .content
 {
     background-color: white;
+    height: 100%;
 }
 
 a
@@ -42,7 +43,7 @@ a
 header
 {
     display: grid;
-    border-bottom: 10px solid #fecd3e;
+    border-bottom: 25px solid #fecd3e;
     grid-template-columns: 4fr 5fr;
     padding-left: 3%;
 }
@@ -64,7 +65,7 @@ header > #headerlogo
 
 #headerlogoimg
 {
-    width: 226px;
+    width: 1000px;
 }
 
 header > #links
@@ -74,7 +75,7 @@ header > #links
     text-align: center;
     align-content: center;
     font-family: "Nexa Bold";
-    font-size: 24px;
+    font-size: 85px;
 }
 
 #links > div > a:hover
@@ -100,12 +101,12 @@ main
 
 #mainlogo
 {
-    width: 335px;
+    width: 1000px
 }
 
 .gridbox
 {
-    gap: 1%;
+    gap: 3%;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -126,6 +127,11 @@ b
     grid-column: 1;
 }
 
+.pride > a > img
+{
+    width: 1500px;
+}
+
 .promoimage
 {
     display: flex;
@@ -137,7 +143,7 @@ b
 
 #maincatalogus
 {
-    width: 500px;
+    width: 1500px;
 }
 
 .secoundtext
@@ -160,38 +166,44 @@ footer
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 3%;
-    font-size: 24px;
+    padding-right: 3%;
+    font-size: 96px;
     font-family: "Nexa Bold";
-    border-top: 10px solid #fecd3e;
+    border-top: 25px solid #fecd3e;
 }
 
-footer > div > p
+footer > div
 {
-    text-align: center;
-    align-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .footerleftalign
 {
-    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .footerleftalign > p
 {
     margin: 0;
-    text-align: left;
 }
 
 .icons
 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    gap: 2%;
 }
 
-footer > .icons > div > a > img
+.icons > div > a > img
 {
-    width: 50px;
+    width: 150px;
+}
+
+.footerrightalign
+{
+    display: flex;
+    margin-left: auto;
 }
 
 /*Footer design end*/
