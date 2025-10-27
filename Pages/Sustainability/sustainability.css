@@ -82,7 +82,7 @@ header > #links
 /*Main design start*/
 /*left side design start*/
 
-.container
+main
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -105,17 +105,16 @@ h3
 
 .organizations
 {
-   display: flex;
-   justify-content: start;
-   gap: 40px;
-   margin-top:20px;
-   padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-top: 5%; 
 }
 
 .organizations img
 {
-    width: 100px;
-    height: auto;
+    width: 100%;
 }
 
 .organizations #panda
@@ -144,7 +143,6 @@ h3
     padding-left: 0;
     font-size: 24px;
 }
-
 
 
 /* Don't change this!*/
