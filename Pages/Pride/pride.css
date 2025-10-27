@@ -136,9 +136,7 @@ header > #links
 
 .flex-img-center
 {
-    margin-inline: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
 }
 
 .h3

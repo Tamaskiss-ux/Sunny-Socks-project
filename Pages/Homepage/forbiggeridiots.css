@@ -146,13 +146,13 @@ b
     width: 1500px;
 }
 
-.secoundtext
+.secondtext
 {
     grid-row: 2;
     grid-column: 2;
 }
 
-.secoundtext > p > a
+.secondtext > p > a
 {
     color: #f15b39;
 }
