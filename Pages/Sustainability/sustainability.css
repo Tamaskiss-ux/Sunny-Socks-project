@@ -109,12 +109,13 @@ header > #links > .Orange
 h3
 {
     font-family: 'Nexa Bold';
+    font-size: 48px;
 }
 
 .leftside p
 {
     align-items: center;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .organizations
@@ -149,14 +150,14 @@ h3
 .charities p
 {
     align-items: right;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .charities ul
 {
     list-style: none;
     padding-left: 0;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 
