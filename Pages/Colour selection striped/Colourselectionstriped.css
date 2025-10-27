@@ -55,10 +55,10 @@ header > #headerlogo
 
 #headerlogoimg
 {
-    width: 226px;
+    width: 225px;
 }
 
-header > #links
+#links
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -68,14 +68,19 @@ header > #links
     font-size: 24px;
 }
 
-#links > div > a:hover
+#links > li > a:hover
 {
     text-decoration: underline;
 }
 
-#links > div > a:active
+#links > li > a:active
 {
     color: #f15b39;
+}
+
+ul
+{
+    list-style-type: none;
 }
 
 /*Header design end*/
