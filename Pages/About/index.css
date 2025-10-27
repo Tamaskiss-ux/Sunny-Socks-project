@@ -106,11 +106,10 @@ body{
 }
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #0F203D;
     color: white;
   }
   .bg-white {
-    background-color: rgba(15, 32, 61, 0.95);
+    /*background-color: rgba(15, 32, 61, 0.95);*/
   }
   footer {
     background-color: #111a2e;
@@ -128,9 +127,13 @@ body{
   transition: opacity 0.3s ease-in-out;
 }
 
-.menu a:hover, .menu a:focus-visible{
-  background:rgba(148,163,184,.12); outline:none; color:#fff;
+.menu a:hover, .menu a:focus-visible {
+  background: rgba(255,255,255,0.1);
+  outline: none;
+  color: #F1C27D;
+  transition: all 0.25s ease;
 }
+
 
 @keyframes slideUp {
   from { transform: translateY(50px); opacity: 0; }
@@ -233,7 +236,7 @@ footer{
   align-items: center;
   background-color: #0F203D;
   border-top: 5px solid #9D7501;
-
+  padding: 15px 25px;
 }
 
 footer .col-1, footer .col-2, footer .col-3{
