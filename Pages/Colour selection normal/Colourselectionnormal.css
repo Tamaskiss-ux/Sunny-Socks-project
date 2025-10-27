@@ -75,6 +75,16 @@ header > #links
     font-size: 24px;
 }
 
+#links > div > a:hover
+{
+    text-decoration: underline;
+}
+
+#links > div > a:active
+{
+    color: #f15b39;
+}
+
 /*Header design end*/
 
 /*Main design start*/
