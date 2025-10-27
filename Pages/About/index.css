@@ -16,6 +16,7 @@ body {
 }
 .main-bg{
   background-color: white;
+    background-image: url(images/bg1.png);
 }
 
 .menu a,
