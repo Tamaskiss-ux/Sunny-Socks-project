@@ -76,6 +76,20 @@ header > #links
     font-size: 24px;
 }
 
+header > #links > .Orange
+{
+    color: #f15b39;
+}
+
+#links > div > a:hover
+{
+    text-decoration: underline;
+}
+
+#links > div > a:active
+{
+    color: #f15b39;
+}
 
 /*Header design end*/
 
@@ -95,12 +109,13 @@ main
 h3
 {
     font-family: 'Nexa Bold';
+    font-size: 48px;
 }
 
 .leftside p
 {
     align-items: center;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .organizations
@@ -134,14 +149,14 @@ h3
 .charities p
 {
     align-items: right;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .charities ul
 {
     list-style: none;
     padding-left: 0;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 

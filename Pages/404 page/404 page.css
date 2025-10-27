@@ -1,0 +1,99 @@
+/*Main body alignment and fonts start*/
+
+@font-face
+{
+    font-family: "Nexa Light";
+    src: url(../../Fontsandimages/Fonts/Nexa\ Light.otf);
+    font-family: "Nexa Bold";
+    src: url(../../Fontsandimages/Fonts/Nexa\ Bold.otf);
+}
+
+body
+{
+    font-size: 32px;
+    font-family: "Nexa Light";
+    background-color: #51b2a2;
+    margin: 0;
+    padding: 0;
+    margin-left: 3%;
+    color: #1e407a;
+}
+
+.content
+{
+    background-color: white;
+}
+
+a
+{
+    color: #1e407a;
+    text-decoration: none;
+}
+
+/*Main body alignment and fonts end*/
+
+/*Body design start*/
+
+#mainFlex
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../../Fontsandimages/background.png);
+    background-size: 97%;
+}
+
+#flexText
+{
+    width: 50%;
+    margin-left: 50px;
+}
+
+#flexMainTitle
+{
+    font-family: "Nexa Bold";
+    font-size: 64px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#flexSubtitle
+{
+    font-family: "Nexa Bold";
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flexSmallText1
+{
+    margin-bottom: 0;
+}
+
+#flexSmallText2
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#flexImg
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#flexImg > img
+{
+    width: 50%;
+}
+
+#flexHomeLink
+{
+    font-family: "Nexa Bold";
+    margin-bottom: 0;
+    margin-top: 70px;
+}
+
+/*Body design end*/

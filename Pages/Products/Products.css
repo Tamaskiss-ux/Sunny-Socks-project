@@ -53,6 +53,13 @@ header > #headerlogo
     justify-content: flex-start;
 }
 
+header > #headerlogo > a
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 #headerlogoimg
 {
     width: 226px;
@@ -71,6 +78,21 @@ header > #links
     align-content: center;
     font-family: "Nexa Bold";
     font-size: 24px;
+}
+
+header > #links > .Orange
+{
+    color: #f15b39;
+}
+
+#links > div > a:hover
+{
+    text-decoration: underline;
+}
+
+#links > div > a:active
+{
+    color: #f15b39;
 }
 
 /*Header design end*/
@@ -102,6 +124,7 @@ h1
     margin-top: auto;
     margin-bottom: auto;
     font-family: "Nexa Bold";
+    font-size: 38px;
 }
 
 .Description
@@ -114,6 +137,7 @@ h1
     margin-top: 0;
     margin-bottom: 0;
     font-family: "Nexa Bold";
+    font-size: 38px;
 }
 
 .colors

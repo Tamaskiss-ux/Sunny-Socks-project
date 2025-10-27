@@ -3,25 +3,24 @@
 @font-face
 {
     font-family: "Nexa Light";
-    src: url(../../Fontsandimages/Fonts/Nexa\ Light.otf);
+    src: url(../../../Fontsandimages/Fonts/Nexa\ Light.otf);
 }
 
 @font-face
 {
     font-family: "Nexa Bold";
-    src: url(../../Fontsandimages/Fonts/Nexa\ Bold.otf);
+    src: url(../../../Fontsandimages/Fonts/Nexa\ Bold.otf);
 }
 
 body
 {
-    font-size: 32px;
-    font-family: "Nexa Light";
+    font-size: 24px ;
+    font-family: "Nexa Bold";
     background-color: #51b2a2;
     margin: 0;
     padding: 0;
     margin-left: 3%;
     color: #1e407a;
-    width: 97%;
 }
 
 .content
@@ -54,13 +53,10 @@ header > #headerlogo
     justify-content: flex-start;
 }
 
-header > #headerlogo 
+#headerlogoimg
 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    width: 226px;
 }
-
 
 #headerlogoimg
 {
@@ -77,14 +73,14 @@ header > #links
     font-size: 24px;
 }
 
-#links > div > a:hover
+h1 > a
 {
-    text-decoration: underline;
+    color: #4fb2a2;
 }
 
-#links > div > a:active
+h1
 {
-    color: #f15b39;
+    color: #4fb2a2;
 }
 
 /*Header design end*/
@@ -98,57 +94,28 @@ main
 }
 /* Don't change this!*/
 
-#mainlogo
+.middle
 {
-    width: 335px;
+    margin-inline: 20%;
 }
 
-.gridbox
+.middle > h1
 {
-    gap: 1%;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    text-wrap: wrap;
 }
 
-b
+.middle > a
 {
-    font-family: "Nexa Bold";
-    font-weight: bolder;
-}
-
-.pride
-{
+    margin-inline: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-row: 2;
-    grid-column: 1;
 }
 
-.promoimage
+.middle > a > img
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-row: 1;
-    grid-column: 2;
-}
-
-#maincatalogus
-{
-    width: 500px;
-}
-
-.secoundtext
-{
-    grid-row: 2;
-    grid-column: 2;
-}
-
-.secoundtext > p > a
-{
-    color: #f15b39;
+    height: 600px;
 }
 
 /*Main design end*/
