@@ -32,11 +32,11 @@
             <div class="gridbox">
                 <div>
                     <p>At Sunny Socks, our purpose is to create comfortable socks to warm people worldwide.
-                    Big or small, old or young - <b>there is something for everyone.</b>
+                        Big or small, old or young - <b>there is something for everyone.</b>
                     </p>
                     <p>
-                    Our <b>new winter collection</b> aims to warm not just your feet, but your heart as well.
-                    Made from <b>ethically sourced </b>cotton, it provides support for your feet during the coldest of days.
+                        Our <b>new winter collection</b> aims to warm not just your feet, but your heart as well.
+                        Made from <b>ethically sourced </b>cotton, it provides support for your feet during the coldest of days.
                     </p>
                 </div>
                 <div class="pride">
@@ -80,5 +80,33 @@
             </div>
         </footer>
     </div>
+    <div class="chatbot-container">
+        <button id="chatbot-toggle" class="chatbot-toggle">💬</button>
+
+        <div class="chatbot-popup" id="chatbot-popup">
+          <div class="chat-header">
+            <h3>Support <span style="font-size:12px; font-weight:400;">– We’re here to help!</span></h3>
+            <button id="chatbot-close" class="close-btn">−</button>
+        </div>
+
+
+        <div class="chat-body" id="chat-body">
+            <div class="bot-msg">👋 Hi there! How can I help you today?</div>
+        </div>
+
+        <div class="quick-questions" id="quick-questions">
+            <button class="quick-btn">Shipping Info</button>
+            <button class="quick-btn">Return Policy</button>
+            <button class="quick-btn">Pride Collection</button>
+            <button class="quick-btn">Sustainability</button>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message..." />
+            <button id="send-btn">➤</button>
+        </div>
+    </div>
+  <script src="js/chatbot.js"></script>
+    
 </body>
 </html>
