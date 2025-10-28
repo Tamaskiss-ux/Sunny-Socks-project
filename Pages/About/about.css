@@ -17,14 +17,14 @@ body {
 .main-bg{
   background-color: white;
 }
-.quick-btn,
+.quick-button,
 .chat-input button {
 
   transition: all 0.3s ease-in-out;
 }
 
 .chat-input button:hover,
-.quick-btn:hover {
+.quick-button:hover {
 
   background-color: #F15B39;
 }
@@ -232,7 +232,7 @@ footer > div
   align-items: center;
 }
 
-.close-btn {
+.close-button {
   background: none;
   border: none;
   color: #fff;
@@ -280,7 +280,7 @@ footer > div
   border-top: 1px solid #ddd;
 }
 
-.quick-btn {
+.quick-button {
   background-color: #9D7501;
   color: #fff;
   border: none;
@@ -291,7 +291,7 @@ footer > div
   transition: 0.3s;
 }
 
-.quick-btn:hover {
+.quick-button:hover {
   background-color: #0F203D;
 }
 
