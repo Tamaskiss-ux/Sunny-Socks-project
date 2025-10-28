@@ -6,7 +6,7 @@ const userInput = document.getElementById("user-input");
 const chatBody = document.getElementById("chat-body");
 const quickBtns = document.querySelectorAll(".quick-btn");
 
-// ✅ toggle open/close using class
+//   toggle open/close using class
 toggleBtn.addEventListener("click", () => {
   chatPopup.classList.toggle("active");
 });
@@ -15,7 +15,7 @@ closeBtn.addEventListener("click", () => {
   chatPopup.classList.remove("active");
 });
 
-// ✅ Add Message Function
+//   Add Message Function
 function addMessage(message, sender) {
   const msgDiv = document.createElement("div");
   msgDiv.classList.add(sender === "user" ? "user-msg" : "bot-msg");
@@ -25,7 +25,7 @@ function addMessage(message, sender) {
   return msgDiv;
 }
 
-// ✅ Typing Effect + Bot Reply Function
+//   Typing Effect + Bot Reply Function
 function showTypingEffect(message) {
   // Step 1: Show "Typing..."
   const typingMsg = addMessage("Typing...", "bot");
@@ -37,7 +37,7 @@ function showTypingEffect(message) {
   }, 3000); // typing delay 1 second
 }
 
-// ✅ Bot Reply Logic
+//   Bot Reply Logic
 function botReply(message) {
   const lower = message.toLowerCase();
   let reply = "";
@@ -52,7 +52,7 @@ function botReply(message) {
   addMessage(reply, "bot");
 }
 
-// ✅ Send Message
+//   Send Message
 sendBtn.addEventListener("click", () => {
   const message = userInput.value.trim();
   if (message) {
@@ -62,7 +62,7 @@ sendBtn.addEventListener("click", () => {
   }
 });
 
-// ✅ Allow Enter key to send
+//   Allow Enter key to send
 userInput.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
     e.preventDefault();
@@ -70,7 +70,7 @@ userInput.addEventListener("keypress", (e) => {
   }
 });
 
-// ✅ Quick Question Clicks
+//   Quick Question Clicks
 quickBtns.forEach(btn => {
   btn.addEventListener("click", () => {
     const text = btn.innerText;
