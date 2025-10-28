@@ -14,7 +14,7 @@
 
 body
 {
-    font-size: 64px;
+    font-size: 20px;
     font-family: "Nexa Light";
     background-color: #51b2a2;
     margin: 0;
@@ -27,7 +27,6 @@ body
 .content
 {
     background-color: white;
-    height: 100%;
 }
 
 a
@@ -43,7 +42,7 @@ a
 header
 {
     display: grid;
-    border-bottom: 10px solid #fecd3e;
+    border-bottom: 8px solid #fecd3e;
     grid-template-columns: 4fr 5fr;
     padding-left: 3%;
 }
@@ -62,30 +61,34 @@ header > #headerlogo
     justify-content: flex-start;
 }
 
-
 #headerlogoimg
 {
-    width: 500px;
+    width: 150px;
 }
 
-header > #links
+#links
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
     align-content: center;
     font-family: "Nexa Bold";
-    font-size: 64px;
+    font-size: 16px;
 }
 
-#links > div > a:hover
+#links > li > a:hover
 {
     text-decoration: underline;
 }
 
-#links > div > a:active
+#links > li > a:active
 {
     color: #f15b39;
+}
+
+ul
+{
+    list-style-type: none;
 }
 
 /*Header design end*/
@@ -101,7 +104,7 @@ main
 
 #mainlogo
 {
-    width: 500px
+    width: 250px;
 }
 
 .gridbox
@@ -129,8 +132,9 @@ b
 
 .pride > a > img
 {
-    width: 850px;
+    width: 250px;
 }
+
 
 .promoimage
 {
@@ -143,7 +147,7 @@ b
 
 #maincatalogus
 {
-    width: 850px;
+    width: 375px;
 }
 
 .secondtext
@@ -152,7 +156,7 @@ b
     grid-column: 2;
 }
 
-.secondtext > p > a
+.secoundtext > p > a
 {
     color: #f15b39;
 }
@@ -167,9 +171,9 @@ footer
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 3%;
     padding-right: 3%;
-    font-size: 64px;
+    font-size: 20px;
     font-family: "Nexa Bold";
-    border-top: 10px solid #fecd3e;
+    border-top: 8px solid #fecd3e;
 }
 
 footer > div
@@ -190,14 +194,28 @@ footer > div
     margin: 0;
 }
 
-.icons
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    margin-block: auto;
+}
+
+.icons > p
 {
-    gap: 2%;
+    margin: 0;
+}
+
+.icon-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 120px;
 }
 
 .icons > div > a > img
 {
-    width: 100px;
+    width: 45px;
 }
 
 .footerrightalign
