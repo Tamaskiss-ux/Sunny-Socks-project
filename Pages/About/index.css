@@ -18,8 +18,6 @@ body {
   background-color: white;
     background-image: url(images/bg1.png);
 }
-
-.menu a,
 .quick-btn,
 .chat-input button {
 
@@ -31,36 +29,59 @@ body {
 
   background-color: #F15B39;
 }
-
-.nav-inner {
-  background-color: #ffffff;
-  border-bottom: 10px solid #fecd3e;
+header
+{
+    display: grid;
+    border-bottom: 10px solid #fecd3e;
+    grid-template-columns: 4fr 5fr;
+    padding-left: 3%;
 }
 
-.nav-inner {
-  max-width: 100%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+header > #headerlogo
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.brand {width: 225px; }
-.brand img { width: 100%; }
-
-.menu {
-  display: flex;
-  align-items: center;
-  gap:110px;
+header > #headerlogo 
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+a{
+  color: #1e407a;
+    text-decoration: none;
+}
+#headerlogoimg
+{
+    width: 225px;
 }
 
-.menu a {
-  color: #0F203D;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 20px;
-  padding: 8px 10px;
-  border-radius: 8px;
+#links
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-content: center;
+    font-family: "Nexa Bold";
+    font-size: 24px;
+}
+
+#links > li > a:hover
+{
+    text-decoration: underline;
+}
+
+#links > li > a:active
+{
+    color: #f15b39;
+}
+
+ul
+{
+    list-style-type: none;
 }
 
 .mt-1 { margin-top: 10px !important; }
@@ -102,40 +123,53 @@ body {
 
 .col-2 { width: 50%; }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  border-top: 5px solid #fecd3e;
+
+footer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 24px;
+    font-family: "Nexa Bold";
+    border-top: 10px solid #fecd3e;
 }
 
-footer .col-1,
-footer .col-2,
-footer .col-3 {
-  width: 33%;
-
+footer > div
+{
+    display: flex;
+    align-items: center;
 }
 
-footer .col-1 p,
-footer .col-3 p {
-  color: #0F203D;
-  margin: 0px !important;
-  font-weight: 700;
-  font-size: 20px;
+.footerleftalign
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
-footer .col-2 span {
-  margin: 0px ;
-  color: #ffffff;
-  font-size: 24px;
+.footerleftalign > p
+{
+    margin: 0;
 }
 
-.social-icon {
-  width: 50px;
-  margin-left: 10px;
+.icons
+{
+    gap: 2%;
 }
 
+.icons > div > a > img
+{
+    width: 50px;
+}
+
+.footerrightalign
+{
+    display: flex;
+    margin-left: auto;
+}
+
+/*Footer design end*/
 .text-center { 
   text-align: center; }
   .chatbot-container {

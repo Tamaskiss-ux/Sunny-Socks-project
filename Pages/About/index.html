@@ -16,28 +16,23 @@
     <div class="main-bg">
 
         <!-- DESKTOP NAVIGATION BAR  -->
-        <nav class="desktop-nav">
-
-            <div class="nav-inner">
-                <!-- Website Logo -->
-                <div class="brand">
-                    <a href="index.html"><img src="images/sunny_logos_orange.png"></a>
-                </div>
-                <!-- Desktop Navigation Menu -->
-                <div class="menu">
-                    <a href="../Products/Products.html">Products</a>
-                    <a href="../Sustainability/Sustainability.html">Sustainability</a>
-                    <a href="../Contact/Contact.html">Contact</a>
-                    <a href="../About/index.html">About us</a>
-                </div>
+        <header>
+            <div id="headerlogo">
+                <img id="headerlogoimg" src="../../Fontsandimages/Logos/png/sunny_logos_orange.png" alt="Logos Orange">
             </div>
-        </nav>
+            <ul id="links">
+                <li><a href="../Products/Products.html">Products</a></li>
+                <li><a href="../Sustainability/Sustainability.html">Sustainability</a></li>
+                <li><a href="../Contact/Contact.html">Contact</a></li>
+                <li><a href="../About/index.html">About us</a></li>
+            </ul>
+        </header>
         
 
         <!--  PAGE CONTENT START  -->
         <div class="wrapper bg-white">
 
-    
+            
             <div class="row">
 
                 <!-- Mission Text -->
@@ -57,7 +52,7 @@
                 </div>
             </div>
 
-           
+            
             <div class="row mt-3 flex-dir">
 
                 <!-- Vision Image -->
@@ -99,32 +94,27 @@
 
             <!-- FOOTER SECTION -->
             <footer>
-
-                <!-- Address Column -->
-                <div class="col-1">
-                    <p>7811 AP, Raadhuisplein 1, </p>
-                    <p>Emmen, Nederland</p>
+                <div class="footerleftalign">
+                    <p>7811 AP,<br> Raadhuisplein 1,<br> Emmen,<br> Nederland</p>
                 </div>
-
-                <!-- Social Media Icons -->
-                <div class="col-2 d-flex aic">
-                    <span>Follow us:</span>
-                    <a href="https://www.facebook.com/"><img class="social-icon" src="images/icon1.png"></a>
-                    <a href="https://www.instagram.com/"><img class="social-icon" src="images/icon2.png"></a>
-                    <a href="https://www.linkedin.com/"><img class="social-icon" src="images/icon3.png"></a>
-                    <a href="https://x.com/"><img class="social-icon" src="images/icon4.png"></a>
+                <div class="icons">
+                    <p>Follow us:</p>
+                    <div>
+                        <a href="https://www.facebook.com/"><img src="../../Fontsandimages/Social/Facebook.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/"><img src="../../Fontsandimages/Social/Instagram.png" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com/"><img src="../../Fontsandimages/Social/linkedin.png" alt="Linkedin"></a>
+                        <a href="https://x.com/"><img src="../../Fontsandimages/Social/Twitter.png" alt="Twitter"></a>
+                    </div> 
                 </div>
-
-                <!-- Copyright -->
-                <div class="col-3 text-center">
-                    <p>© 2025 Sunny Socks</p>
+                <div class="footerrightalign">
+                    <p>&#169;2025 Sunny Socks</p>
                 </div>
             </footer>
 
         </div>
-       
+        
     </div>
-  
+    
     <!-- Chatbot Container -->
     <div class="chatbot-container">
         <button id="chatbot-toggle" class="chatbot-toggle">💬</button>
