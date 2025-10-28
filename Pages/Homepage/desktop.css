@@ -156,9 +156,19 @@ b
     grid-column: 2;
 }
 
-.secoundtext > p > a
+.secondtext > p > a
 {
     color: #f15b39;
+}
+
+.secondtext > p > a:hover
+{
+    text-decoration: underline;
+}
+
+.secondtext > p > a:active
+{
+    color: #1e407a;
 }
 
 /*Main design end*/
