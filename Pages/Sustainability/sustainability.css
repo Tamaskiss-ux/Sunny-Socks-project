@@ -134,12 +134,7 @@ h3
 
 .organizations img
 {
-    width: 100%;
-}
-
-.organizations #panda
-{
-    width: 80px;
+    width: 120px;
 }
 
 /* right side design (image+charities*/
@@ -147,7 +142,7 @@ h3
 
 .handsearth
 {
-    width: 90%;
+    width: 100%;
     align-items: center;
 }
 
@@ -155,6 +150,7 @@ h3
 {
     align-items: right;
     font-size: 32px;
+    margin-bottom: 0;
 }
 
 .charities ul
@@ -162,6 +158,7 @@ h3
     list-style: none;
     padding-left: 0;
     font-size: 32px;
+    margin-top: 0;
 }
 
 
