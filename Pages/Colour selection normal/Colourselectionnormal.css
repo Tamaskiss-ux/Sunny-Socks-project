@@ -1,7 +1,13 @@
+/*Main body alignment and fonts start*/
+
 @font-face
 {
     font-family: "Nexa Light";
     src: url(../../Fontsandimages/Fonts/Nexa\ Light.otf);
+}
+
+@font-face
+{
     font-family: "Nexa Bold";
     src: url(../../Fontsandimages/Fonts/Nexa\ Bold.otf);
 }
@@ -9,11 +15,12 @@
 body
 {
     font-size: 32px;
-    font-family: "Nexa Light";
+    font-family: "Nexa Bold";
     background-color: #51b2a2;
     margin: 0;
     padding: 0;
     margin-left: 3%;
+    color: #1e407a;
 }
 
 .content
@@ -21,18 +28,22 @@ body
     background-color: white;
 }
 
+a
+{
+    color: #1e407a;
+    text-decoration: none;
+}
+
+/*Main body alignment and fonts end*/
+
+/*Header design start*/
+
 header
 {
     display: grid;
     border-bottom: 10px solid #fecd3e;
     grid-template-columns: 4fr 5fr;
     padding-left: 3%;
-}
-
-a
-{
-    color: #1e407a;
-    text-decoration: none;
 }
 
 header > #headerlogo
@@ -79,101 +90,57 @@ ul
     list-style-type: none;
 }
 
-#pride-bg
-{
-    background-image: url(../../Fontsandimages/background.png);
-    background-size: 97%;
-}
+/*Header design end*/
 
-#title
+/*Main design start*/
+
+/* Don't change this!*/
+main
+{
+    margin: 5%;
+}
+/* Don't change this!*/
+
+.images
 {
     display: grid;
-    grid-template-columns: 30% 20% 30%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-inline: 10%;
 }
 
-#pride-title
-{
-    color: #e990b9;
-    font-family: "Nexa Bold";
-    font-size: 5vw;
-    justify-self: center;
-    align-self: center;
-}
-
-.item-flag > img
+.images > a >img
 {
     width: 100%;
-    height: 100%;
 }
 
-#mainGrid
+.blue
 {
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 48% 48%;
-    gap: 15px;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
+    margin-top: 50%;
 }
 
-.items-in-grid
+.green
 {
-    padding: 5px;
+    margin-top: 100%
 }
 
-.center-text
+.pink
 {
-    align-self: center;
+    margin-top: 50%
 }
 
-.flag-img-in-grid > img
+.yellow
 {
-    width: 100%;
-    height: 100%;
+    margin-top: 0%
 }
 
-.logo-img-in-grid
+.red
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin-top: 50%
 }
 
-.logo-img-in-grid > img
-{
-    width: 75%;
-}
+/*Main design end*/
 
-.flex-img-center
-{
-    margin: auto;
-}
-
-.h3
-{
-    font-family: "Nexa Bold";
-    font-size: 38px;
-    color: #e990b9;
-    margin-bottom: 5px;
-}
-
-.p-pink
-{
-    font-family: "Nexa Light";
-    font-size: 32px;
-    color: #e990b9;
-}
-
-b
-{
-    font-weight: 500;
-    font-family: "Nexa Bold";
-}
+/*Footer design start*/
 
 footer
 {
@@ -183,7 +150,6 @@ footer
     font-size: 24px;
     font-family: "Nexa Bold";
     border-top: 10px solid #fecd3e;
-    color: #1e407a;
 }
 
 footer > div > p
@@ -214,3 +180,5 @@ footer > .icons > div > a > img
 {
     width: 50px;
 }
+
+/*Footer design end*/

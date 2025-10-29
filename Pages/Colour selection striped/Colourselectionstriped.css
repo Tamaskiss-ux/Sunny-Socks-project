@@ -1,3 +1,5 @@
+/*Main body alignment and fonts start*/
+
 @font-face
 {
     font-family: "Nexa Light";
@@ -13,7 +15,7 @@
 body
 {
     font-size: 32px;
-    font-family: "Nexa Light";
+    font-family: "Nexa Bold";
     background-color: #51b2a2;
     margin: 0;
     padding: 0;
@@ -28,10 +30,11 @@ body
 
 a
 {
-
     color: #1e407a;
     text-decoration: none;
 }
+
+/*Main body alignment and fonts end*/
 
 /*Header design start*/
 
@@ -43,7 +46,7 @@ header
     padding-left: 3%;
 }
 
-header > #headerlogo > a
+header > #headerlogo
 {
     display: flex;
     align-items: center;
@@ -52,10 +55,10 @@ header > #headerlogo > a
 
 #headerlogoimg
 {
-    width: 226px;
+    width: 225px;
 }
 
-header > #links
+#links
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -65,108 +68,73 @@ header > #links
     font-size: 24px;
 }
 
+#links > li > a:hover
+{
+    text-decoration: underline;
+}
+
+#links > li > a:active
+{
+    color: #f15b39;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
 /*Header design end*/
 
-/*main starts*/
+/*Main design start*/
 
-main{
+/* Don't change this!*/
+main
+{
     margin: 5%;
 }
+/* Don't change this!*/
 
-h1{
-    font-family: "Nexa Bold";
-    font-size: 48px;
-}
-
-.gridbox{
+.images
+{
     display: grid;
-    grid-template-columns: 4fr 2fr;
-    grid-template-rows: 2fr 1fr 2fr;
-    gap : 20px;
-    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-inline: 10%;
 }
 
-.contacttext{
-    grid-column: 1 / 2;
-    grid-row: 1;
-    border-color: #1e407a;
-    border-width: 2px;
-    border-style: solid;
-    padding-left: 2%;
-    
+.images > a >img
+{
+    width: 100%;
 }
 
-.addinform{
-    grid-column: 2;
-    grid-row: 1/3;
-    border-color: #1e407a;
-    border-width: 2px;
-    border-style: solid;
+.blue
+{
+    margin-top: 50%;
 }
 
-.add-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 5px;
-    
+.green
+{
+    margin-top: 100%
 }
 
-.add-header{
-    font-family: "Nexa Bold";
-    font-size: 48px;
-    grid-column: 1/3;
-    grid-row: 1;
-    padding-bottom: -10%;
+.pink
+{
+    margin-top: 50%
 }
 
-.img-left{
-    width: 90%;
-    height: 100%;;
-    
+.yellow
+{
+    margin-top: 0%
 }
 
-.img-right{
-    grid-column: 2;
-    grid-row: 2;
-    width: 90%;
-    height: 100%;
-    
+.red
+{
+    margin-top: 50%
 }
 
-.img-bottom-r{
-    grid-column: 2;
-    grid-row: 3;
-    width: 90%;
-    height: 100%;
-}
-
-.img-bottom-l{
-    grid-column: 1;
-    grid-row: 3;
-    width: 90%;
-    height: 100%;
-}
-
-.addinform img{
-    margin-top: -10%;
-    padding-left: 5%;
-}
-
-.form{
-    grid-column: 1 / 2;
-    grid-row: 2;
-    border-color: #1e407a;
-    border-width: 2px;
-    border-style: solid;
-    padding-left: 2%;
-}
-
-
-
-
+/*Main design end*/
 
 /*Footer design start*/
+
 footer
 {
     display: grid;
@@ -205,3 +173,5 @@ footer > .icons > div > a > img
 {
     width: 50px;
 }
+
+/*Footer design end*/
