@@ -14,8 +14,8 @@
 
 body
 {
-    font-size: 32px;
-    font-family: "Nexa Light";
+    font-size: 20px;
+    font-family: "Nexa Bold";
     background-color: #51b2a2;
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@ a
 header
 {
     display: grid;
-    border-bottom: 10px solid #fecd3e;
+    border-bottom: 8px solid #fecd3e;
     grid-template-columns: 4fr 5fr;
     padding-left: 3%;
 }
@@ -53,7 +53,7 @@ header > #headerlogo
     justify-content: flex-start;
 }
 
-header > #headerlogo > a
+header > #headerlogo 
 {
     display: flex;
     align-items: center;
@@ -62,7 +62,7 @@ header > #headerlogo > a
 
 #headerlogoimg
 {
-    width: 225px;
+    width: 150px;
 }
 
 #links
@@ -72,7 +72,7 @@ header > #headerlogo > a
     text-align: center;
     align-content: center;
     font-family: "Nexa Bold";
-    font-size: 24px;
+    font-size: 16px;
 }
 
 #links > li > a:hover
@@ -90,80 +90,10 @@ ul
     list-style-type: none;
 }
 
-#Orange
-{
-    color: #f15b39;
-}
 
 /*Header design end*/
 
 /*Main design start*/
-
-/*left side design start*/
-
-main
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: start;
-    margin: 10px;
-    padding: 20px;
-}
-
-h3
-{
-    font-family: 'Nexa Bold';
-    font-size: 48px;
-}
-
-.leftside p
-{
-    align-items: center;
-    font-size: 32px;
-}
-
-.organizations
-{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 40px;
-    margin-top: 5%; 
-}
-
-.organizations img
-{
-    width: 100%;
-}
-
-.organizations #panda
-{
-    width: 80px;
-}
-
-/* right side design (image+charities*/
-
-
-.handsearth
-{
-    width: 90%;
-    align-items: center;
-}
-
-.charities p
-{
-    align-items: right;
-    font-size: 32px;
-}
-
-.charities ul
-{
-    list-style: none;
-    padding-left: 0;
-    font-size: 32px;
-}
-
 
 /* Don't change this!*/
 main
@@ -172,6 +102,42 @@ main
 }
 /* Don't change this!*/
 
+.images
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-inline: 10%;
+}
+
+.images > a >img
+{
+    width: 100%;
+}
+
+.blue
+{
+    margin-top: 50%;
+}
+
+.green
+{
+    margin-top: 100%
+}
+
+.pink
+{
+    margin-top: 50%
+}
+
+.yellow
+{
+    margin-top: 0%
+}
+
+.red
+{
+    margin-top: 50%
+}
 
 /*Main design end*/
 
@@ -183,7 +149,7 @@ footer
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 3%;
     padding-right: 3%;
-    font-size: 24px;
+    font-size: 20px;
     font-family: "Nexa Bold";
     border-top: 8px solid #fecd3e;
 }

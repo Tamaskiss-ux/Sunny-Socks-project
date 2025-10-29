@@ -6,21 +6,23 @@
     <title>Sunny | Classic Socks - Blue</title>
     <link rel="icon" type="image/ico" href="../../../Fontsandimages/Illustraties/png/Sunny_socks_Yellow.png">
     <!-- Don't forget to change the name for the title of the page and the css link!-->
-    <link rel="stylesheet" href="Blue normal.css">
-    <link rel="stylesheet" href="confirmation.css">
+    <link rel="stylesheet" href="desktop_blue_normal.css" media="(min-width: 1101px)">
+    <link rel="stylesheet" href="tabletlandscape_blue_normal.css" media="(min-width: 801px) and (max-width: 1100px)">
 </head>
 <body>
     <div class="content">
         <!-- Only change things in the header if you are going to add in more content to the top but than add it in to the css as well-->
         <header>
             <div id="headerlogo">
-                <img id="headerlogoimg" src="../../Fontsandimages/Logos/png/sunny_logos_orange.png" alt="Logos Orange">
+                <a href="../Homepage/Index.html">
+                    <img id="headerlogoimg" src="../../../Fontsandimages/Logos/png/sunny_logos_blue.png" alt="Logos Orange">
+                </a>
             </div>
             <ul id="links">
-                <li><a href="../Products/Products.html">Products</a></li>
-                <li><a href="../Sustainability/Sustainability.html">Sustainability</a></li>
-                <li><a href="../Contact/Contact.html">Contact</a></li>
-                <li><a href="../About/About.html">About us</a></li>
+                <li><a href="../../Products/Products.html"></a>Products</li>
+                <li><a href="../../Sustainability/Sustainability.html">Sustainability</a></li>
+                <li><a href="../../Contact/Contact.html">Contact</a></li>
+                <li><a href="../../About/About.html">About us</a></li>
             </ul>
         </header>
 
@@ -46,7 +48,7 @@
         <!--Don't change things here-->
         <footer>
             <div class="footerleftalign">
-                <p>7811 AP, Raadhuisplein 1, Emmen, Nederland</p>
+                <p>7811 AP,<br> Raadhuisplein 1,<br> Emmen,<br> Nederland</p>
             </div>
             <div class="icons">
                 <p>Follow us:</p>
@@ -57,37 +59,10 @@
                     <a href="https://x.com/"><img src="../../../Fontsandimages/Social/Twitter.png" alt="Twitter"></a>
                 </div> 
             </div>
-            <div>
+            <div class="footerrightalign">
                 <p>&#169;2025 Sunny Socks</p>
             </div>
         </footer>
     </div>
-    <div class="chatbot-container">
-        <button id="chatbot-toggle" class="chatbot-toggle">💬</button>
-
-        <div class="chatbot-popup" id="chatbot-popup">
-          <div class="chat-header">
-            <h3>Support <span style="font-size:12px; font-weight:400;">– We’re here to help!</span></h3>
-            <button id="chatbot-close" class="close-btn">−</button>
-        </div>
-
-
-        <div class="chat-body" id="chat-body">
-            <div class="bot-msg">👋 Hi there! How can I help you today?</div>
-        </div>
-
-        <div class="quick-questions" id="quick-questions">
-            <button class="quick-btn">Shipping Info</button>
-            <button class="quick-btn">Return Policy</button>
-            <button class="quick-btn">Pride Collection</button>
-            <button class="quick-btn">Sustainability</button>
-        </div>
-
-        <div class="chat-input">
-            <input type="text" id="user-input" placeholder="Type your message..." />
-            <button id="send-btn">➤</button>
-        </div>
-    </div>
-    <script src="js/script.js"></script>
 </body>
 </html>

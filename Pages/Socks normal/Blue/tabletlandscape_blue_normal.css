@@ -3,19 +3,19 @@
 @font-face
 {
     font-family: "Nexa Light";
-    src: url(../../Fontsandimages/Fonts/Nexa\ Light.otf);
+    src: url(../../../Fontsandimages/Fonts/Nexa\ Light.otf);
 }
 
 @font-face
 {
     font-family: "Nexa Bold";
-    src: url(../../Fontsandimages/Fonts/Nexa\ Bold.otf);
+    src: url(../../../Fontsandimages/Fonts/Nexa\ Bold.otf);
 }
 
 body
 {
-    font-size: 32px;
-    font-family: "Nexa Light";
+    font-size: 24px ;
+    font-family: "Nexa Bold";
     background-color: #51b2a2;
     margin: 0;
     padding: 0;
@@ -62,7 +62,7 @@ header > #headerlogo > a
 
 #headerlogoimg
 {
-    width: 225px;
+    width: 150px;
 }
 
 #links
@@ -72,7 +72,7 @@ header > #headerlogo > a
     text-align: center;
     align-content: center;
     font-family: "Nexa Bold";
-    font-size: 24px;
+    font-size: 16px;
 }
 
 #links > li > a:hover
@@ -90,80 +90,9 @@ ul
     list-style-type: none;
 }
 
-#Orange
-{
-    color: #f15b39;
-}
-
 /*Header design end*/
 
 /*Main design start*/
-
-/*left side design start*/
-
-main
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: start;
-    margin: 10px;
-    padding: 20px;
-}
-
-h3
-{
-    font-family: 'Nexa Bold';
-    font-size: 48px;
-}
-
-.leftside p
-{
-    align-items: center;
-    font-size: 32px;
-}
-
-.organizations
-{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 40px;
-    margin-top: 5%; 
-}
-
-.organizations img
-{
-    width: 100%;
-}
-
-.organizations #panda
-{
-    width: 80px;
-}
-
-/* right side design (image+charities*/
-
-
-.handsearth
-{
-    width: 90%;
-    align-items: center;
-}
-
-.charities p
-{
-    align-items: right;
-    font-size: 32px;
-}
-
-.charities ul
-{
-    list-style: none;
-    padding-left: 0;
-    font-size: 32px;
-}
-
 
 /* Don't change this!*/
 main
@@ -172,6 +101,29 @@ main
 }
 /* Don't change this!*/
 
+.middle
+{
+    margin-inline: 20%;
+}
+
+.middle > h1
+{
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.middle > a
+{
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle > a > img
+{
+    height: 450px;
+}
 
 /*Main design end*/
 
@@ -183,7 +135,7 @@ footer
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 3%;
     padding-right: 3%;
-    font-size: 24px;
+    font-size: 20px;
     font-family: "Nexa Bold";
     border-top: 8px solid #fecd3e;
 }
