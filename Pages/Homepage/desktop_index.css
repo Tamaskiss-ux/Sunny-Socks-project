@@ -66,6 +66,11 @@ header > #headerlogo
     width: 225px;
 }
 
+button
+{
+    display: none;
+}
+
 #links
 {
     display: grid;
@@ -102,7 +107,7 @@ main
 }
 /* Don't change this!*/
 
-#mainlogo
+#mainlogo > img
 {
     width: 335px;
 }
