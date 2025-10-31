@@ -95,10 +95,12 @@ ul
 /*Main design start*/
 
 /* Don't change this!*/
+
 main
 {
     margin: 5%;
 }
+
 /* Don't change this!*/
 
 .images
@@ -120,22 +122,22 @@ main
 
 .green
 {
-    margin-top: 100%
+    margin-top: 100%;
 }
 
 .pink
 {
-    margin-top: 50%
+    margin-top: 50%;
 }
 
 .yellow
 {
-    margin-top: 0%
+    margin-top: 0%;
 }
 
 .red
 {
-    margin-top: 50%
+    margin-top: 50%;
 }
 
 /*Main design end*/
