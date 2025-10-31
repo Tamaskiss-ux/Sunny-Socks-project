@@ -99,7 +99,7 @@ ul
 
 /*Main design start*/
 
-/*left side design start*/
+/*Left side design start*/
 
 main
 {
@@ -137,8 +137,7 @@ h3
     width: 120px;
 }
 
-/* right side design (image+charities*/
-
+/*Right side design (image+charities)*/
 
 .handsearth
 {
@@ -161,14 +160,14 @@ h3
     margin-top: 0;
 }
 
-
 /* Don't change this!*/
+
 main
 {
     margin: 5%;
 }
-/* Don't change this!*/
 
+/* Don't change this!*/
 
 /*Main design end*/
 
@@ -203,7 +202,8 @@ footer > div
     margin: 0;
 }
 
-.icons {
+.icons
+{
     display: flex;
     flex-direction: column;
     gap: 3%;
@@ -215,7 +215,8 @@ footer > div
     margin: 0;
 }
 
-.icon-row {
+.icon-row
+{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
