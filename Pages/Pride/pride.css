@@ -2,6 +2,9 @@
 {
     font-family: "Nexa Light";
     src: url(../../Fontsandimages/Fonts/Nexa\ Light.otf);
+}
+@font-face
+{
     font-family: "Nexa Bold";
     src: url(../../Fontsandimages/Fonts/Nexa\ Bold.otf);
 }
@@ -20,6 +23,8 @@ body
 {
     background-color: white;
 }
+
+/*Header design starts*/
 
 header
 {
@@ -78,6 +83,10 @@ ul
 {
     list-style-type: none;
 }
+
+/*Header design ends*/
+
+/*Main design starts*/
 
 #pride-bg
 {
@@ -175,6 +184,10 @@ b
     font-family: "Nexa Bold";
 }
 
+/*Main design ends*/
+
+/*Footer design starts*/
+
 footer
 {
     display: grid;
@@ -214,3 +227,5 @@ footer > .icons > div > a > img
 {
     width: 50px;
 }
+
+/*Footer design ends*/
