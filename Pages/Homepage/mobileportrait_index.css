@@ -80,6 +80,9 @@ button
 
 #links
 {
+    position: absolute;
+    right: 0;
+    top: 50px;
     display: none;
     position: absolute;
     background-color: #fecd3e;
@@ -90,6 +93,7 @@ button
 #links > li
 {
     display: block;
+    font-family: "Nexa Bold";
 }
 
 .dropdown:hover #links
@@ -97,15 +101,9 @@ button
     display: block;
 }
 
-#links > li > a:hover
-{
-    font-family: "Nexa Light";
-    font-weight: bold;
-    text-decoration: underline;
-}
-
 #links > li > a:active
 {
+    text-decoration: underline;
     color: #f15b39;
 }
 
@@ -220,17 +218,19 @@ footer > div
 
 .footerleftalign > p
 {
-    margin: 0;
+    margin-inline: auto;
 }
 
-.icons {
+.icons 
+{
     margin-block: 5%;
     display: flex;
     flex-direction: column;
     gap: 3%;
 }
 
-.icon-row {
+.icon-row 
+{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;

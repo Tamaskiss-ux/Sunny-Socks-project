@@ -210,13 +210,15 @@ footer > div
     margin: 0;
 }
 
-.icons {
+.icons
+{
   display: flex;
   flex-direction: column;
   gap: 3%;
 }
 
-.icon-row {
+.icon-row
+{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
