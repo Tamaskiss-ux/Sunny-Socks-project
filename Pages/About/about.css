@@ -1,33 +1,55 @@
-* {
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+@font-face
+{
+  font-family: "Nexa Light";
+  src: url(../../Fontsandimages/Fonts/Nexa\ Light.otf);
 }
 
-html {
+@font-face
+{
+  font-family: "Nexa Bold";
+  src: url(../../Fontsandimages/Fonts/Nexa\ Bold.otf);
+}
+
+*
+{
+  box-sizing: border-box;
+}
+
+html
+{
   scroll-behavior: smooth;
 }
 
-body {
+body
+{
   display: flex;
   justify-content: center;
   margin: 0px;
   background-color: #51b2a2;
   margin-left: 3%;
+  font-family: "Nexa Light";
+  color: #1e407a;
 }
-.main-bg{
+
+.main-bg
+{
   background-color: white;
 }
-.quick-button,
-.chat-input button {
 
+.quick-button,
+.chat-input button
+{
   transition: all 0.3s ease-in-out;
 }
 
 .chat-input button:hover,
-.quick-button:hover {
-
+.quick-button:hover
+{
   background-color: #0F203D;
 }
+
+/*Header design starts here*/
+
 header
 {
   display: grid;
@@ -49,10 +71,13 @@ header > #headerlogo
   align-items: center;
   justify-content: flex-start;
 }
-a{
+
+a
+{
   color: #1e407a;
   text-decoration: none;
 }
+
 #headerlogoimg
 {
   width: 225px;
@@ -78,47 +103,96 @@ a{
   color: #f15b39;
 }
 
+/*Header design ends here*/
+
+/*Main design starts here*/
+
 ul
 {
   list-style-type: none;
 }
 
-.grid { 
-  display: flex; width: 100%;
+.grid
+{ 
+  display: flex;
+  width: 100%;
 }
 
-.box-1 h2 {
+.box-1 h2
+{
   font-weight: 700;
   font-size: 40px;
   margin: 0px;
   color: #E990B9;
+  font-family: "Nexa Bold";
 }
 
-.img { width: 85%; }
+.img
+{
+  width: 85%;
+}
 
-.pride-img { display: flex; }
-.jce { justify-content: end; }
-.jcc { justify-content: center; }
-.aic { align-items: center; }
+.pride-img
+{
+  display: flex;
+}
 
-.pt { padding-top: 30px; }
-.pl { padding-left: 20px; }
-.pr { padding-right: 70px; }
-.pb { padding-bottom: 20px; }
+.jce
+{
+  justify-content: end;
+}
 
-.box-1 {
+.jcc
+{
+  justify-content: center;
+}
+
+.aic
+{
+  align-items: center;
+}
+
+.pt
+{
+  padding-top: 30px;
+}
+
+.pl
+{
+  padding-left: 20px;
+}
+
+.pr 
+{
+  padding-right: 70px;
+}
+
+.pb
+{
+  padding-bottom: 20px;
+}
+
+.box-1
+{
   width: 50%;
   padding: 20px 30px;
 }
-.box-1 p {
+
+.box-1 p
+{
   font-size: 26px;
   margin: 0px;
   color: #1e407a;
 }
 
+.box-2
+{
+  width: 50%;
+}
 
-.box-2 { width: 50%; }
+/*Main design ends here*/
 
+/*Footer design starts here*/
 
 footer
 {
@@ -147,6 +221,7 @@ footer > div
 .footerleftalign > p
 {
   margin: 0;
+  font-family: "Nexa Bold";
 }
 
 .icons
@@ -163,17 +238,28 @@ footer > div
 {
   display: flex;
   margin-left: auto;
+  font-family: "Nexa Bold";
 }
 
-/*Chatbot css*/
-.chatbot-container {
+.footerrightalign > p
+{
+  font-family: "Nexa Bold";
+}
+
+/*Footer design ends here*/
+
+/*Chatbot design starts here*/
+
+.chatbot-container
+{
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 999;
 }
 
-.chatbot-toggle {
+.chatbot-toggle
+{
   background-color: #9D7501;
   border: none;
   width: 65px;
@@ -187,14 +273,16 @@ footer > div
   justify-content: center;
   align-items: center;
 }
-.chatbot-toggle:hover {
+
+.chatbot-toggle:hover
+{
   background-color: #0F203D;
   transform: scale(1.1);
   transition: 0.3s ease;
 }
 
-
-.chatbot-popup {
+.chatbot-popup
+{
   display: none;
   flex-direction: column;
   width: 320px;
@@ -209,15 +297,15 @@ footer > div
   transition: all 5s ease;
 }
 
-.chatbot-popup.active {
+.chatbot-popup.active
+{
   display: flex;
   opacity: 1;
   transform: scale(1);
 }
 
-
-
-.chat-header {
+.chat-header
+{
   background-color: #0F203D;
   color: #fff;
   padding: 0px 12px;
@@ -226,7 +314,8 @@ footer > div
   align-items: center;
 }
 
-.close-button {
+.close-button
+{
   background: none;
   border: none;
   color: #fff;
@@ -234,7 +323,8 @@ footer > div
   cursor: pointer;
 }
 
-.chat-body {
+.chat-body
+{
   flex: 1;
   padding: 10px;
   overflow-y: auto;
@@ -242,7 +332,8 @@ footer > div
   flex-direction: column;
 }
 
-.user-msg, .bot-msg {
+.user-msg, .bot-msg
+{
   max-width: 80%;
   padding: 10px 14px;
   margin: 6px 0;
@@ -251,21 +342,23 @@ footer > div
   font-size: 14px;
 }
 
-.user-msg {
+.user-msg
+{
   background: linear-gradient(135deg, #9D7501, #b88b2d);
   color: white;
   align-self: flex-end;
 }
 
-.bot-msg {
+.bot-msg
+{
   background: #f4f4f4;
   color: #0F203D;
   border: 1px solid #ddd;
   align-self: flex-start;
 }
 
-
-.quick-questions {
+.quick-questions
+{
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -274,7 +367,8 @@ footer > div
   border-top: 1px solid #ddd;
 }
 
-.quick-button {
+.quick-button
+{
   background-color: #9D7501;
   color: #fff;
   border: none;
@@ -285,18 +379,21 @@ footer > div
   transition: 0.3s;
 }
 
-.quick-button:hover {
+.quick-button:hover
+{
   background-color: #0F203D;
 }
 
-.chat-input {
+.chat-input
+{
   display: flex;
   border-top: 1px solid #ddd;
   padding: 8px;
   background: #fff;
 }
 
-.chat-input input {
+.chat-input input
+{
   flex: 1;
   border: none;
   outline: none;
@@ -304,7 +401,8 @@ footer > div
   font-size: 14px;
 }
 
-.chat-input button {
+.chat-input button
+{
   background-color: #9D7501;
   border: none;
   color: white;
@@ -312,13 +410,18 @@ footer > div
   border-radius: 6px;
   cursor: pointer;
 }
-@media screen and (max-width: 500px) {
-  .chatbot-popup {
+
+@media screen and (max-width: 500px)
+{
+  .chatbot-popup
+  {
     width: 90%;
     height: 70vh;
     right: 5%;
   }
-  .chatbot-toggle {
+
+  .chatbot-toggle
+  {
     background-color: #b78506;
     border: none;
     color: white;
@@ -329,3 +432,5 @@ footer > div
     box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
   }
 }
+
+/*Chatbot design ends here*/
