@@ -4,6 +4,9 @@
 {
     font-family: "Nexa Light";
     src: url(../../Fontsandimages/Fonts/Nexa\ Light.otf);
+}
+
+@font-face {
     font-family: "Nexa Bold";
     src: url(../../Fontsandimages/Fonts/Nexa\ Bold.otf);
 }
@@ -40,7 +43,6 @@ a
     align-items: center;
     height: 100vh;
     background-image: url(../../Fontsandimages/background.png);
-    background-size: 97%;
 }
 
 #flexText
@@ -53,8 +55,8 @@ a
 {
     font-family: "Nexa Bold";
     font-size: 64px;
-    margin-bottom: 0;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 #flexSubtitle
