@@ -96,15 +96,10 @@ ul
 
 .img { width: 85%; }
 
-.pride-img { display: flex; }
-.jce { justify-content: end; }
-.jcc { justify-content: center; }
-.aic { align-items: center; }
-
-.pt { padding-top: 30px; }
-.pl { padding-left: 20px; }
-.pr { padding-right: 70px; }
-.pb { padding-bottom: 20px; }
+.pride-img { 
+  display: flex; 
+  justify-content: end;
+}
 
 .box-1 {
   width: 50%;
