@@ -10,7 +10,6 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Nexa Light", Arial, sans-serif;
 }
 
 html {
@@ -24,6 +23,7 @@ body {
   background-color: #51b2a2;
   margin-left: 3%;
   font-size: 32px;
+  font-family: "Nexa Light";
 }
 .main-bg{
   background-color: white;
@@ -45,6 +45,7 @@ header
   border-bottom: 10px solid #fecd3e;
   grid-template-columns: 4fr 5fr;
   padding-left: 3%;
+  font-family: "Nexa Bold";
 }
 
 header > #headerlogo
@@ -77,6 +78,11 @@ a{
   align-content: center;
   font-family: "Nexa Bold";
   font-size: 24px;
+}
+
+#links > li
+{
+  font-family: "Nexa Bold";
 }
 
 #links > li > a:hover
