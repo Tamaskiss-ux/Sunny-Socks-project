@@ -14,7 +14,7 @@
 
 body
 {
-    font-size: 20px;
+    font-size: 32px;
     font-family: "Nexa Light";
     background-color: #51b2a2;
     margin: 0;
@@ -53,6 +53,13 @@ header > #headerlogo
     justify-content: flex-start;
 }
 
+header > #headerlogo 
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 header > #headerlogo > a
 {
     display: flex;
@@ -62,26 +69,47 @@ header > #headerlogo > a
 
 #headerlogoimg
 {
-    width: 150px;
+    width: 225px;
+}
+
+button
+{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.dropdown
+{
+    position: relative;
 }
 
 #links
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    text-align: center;
-    align-content: center;
-    font-family: "Nexa Bold";
-    font-size: 16px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    display: none;
+    position: absolute;
+    background-color: #fecd3e;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-#links > li > a:hover
+#links > li
 {
-    text-decoration: underline;
+    display: block;
+    font-family: "Nexa Bold";
+}
+
+.dropdown:hover #links
+{
+    display: block;
 }
 
 #links > li > a:active
 {
+    text-decoration: underline;
     color: #f15b39;
 }
 
@@ -119,7 +147,7 @@ h1
     margin-top: auto;
     margin-bottom: auto;
     font-family: "Nexa Bold";
-    font-size: 24px;
+    font-size: 38px;
 }
 
 .Description
@@ -132,7 +160,7 @@ h1
     margin-top: 0;
     margin-bottom: 0;
     font-family: "Nexa Bold";
-    font-size: 24px;
+    font-size: 38px;
 }
 
 .colors
@@ -145,8 +173,8 @@ h1
 
 .colors > a 
 {
-    height: 150px;
-    width: 30px;
+    height: 175px;
+    width: 40px;
     border-radius: 1rem;
     margin-inline: auto ;
 }
@@ -194,7 +222,7 @@ h1
 
 .firstcolumn > div > a > img
 {
-    width: 200px;
+    width: 275px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,7 +244,7 @@ h1
 
 .secoundcolumn > div > a >img
 {
-    width: 200px;
+    width: 275px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,7 +269,7 @@ footer
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 3%;
     padding-right: 3%;
-    font-size: 20px;
+    font-size: 24px;
     font-family: "Nexa Bold";
     border-top: 8px solid #fecd3e;
 }
