@@ -1,6 +1,16 @@
+@font-face {
+  font-family: "Nexa Light";
+  src: url(../../Fontsandimages/Fonts/Nexa\ Light.otf);
+}
+
+@font-face {
+  font-family: "Nexa Bold";
+  src: url(../../Fontsandimages/Fonts/Nexa\ Bold.otf);
+}
+
 * {
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Nexa Light", Arial, sans-serif;
 }
 
 html {
@@ -13,6 +23,7 @@ body {
   margin: 0px;
   background-color: #51b2a2;
   margin-left: 3%;
+  font-size: 32px;
 }
 .main-bg{
   background-color: white;
@@ -89,7 +100,8 @@ ul
 
 .box-1 h2 {
   font-weight: 700;
-  font-size: 40px;
+  font-family: "Nexa Bold";
+  font-size: 38px;
   margin: 0px;
   color: #E990B9;
 }
@@ -106,7 +118,7 @@ ul
   padding: 20px 30px;
 }
 .box-1 p {
-  font-size: 26px;
+  font-size: 32px;
   margin: 0px;
   color: #1e407a;
 }
