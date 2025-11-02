@@ -114,7 +114,7 @@ main
 h3
 {
     font-family: 'Nexa Bold';
-    font-size: 48px;
+    font-size: 38px;
 }
 
 .leftside p
@@ -132,7 +132,7 @@ h3
     margin-top: 5%; 
 }
 
-.organizations img
+.organizations > a > img
 {
     width: 120px;
 }
