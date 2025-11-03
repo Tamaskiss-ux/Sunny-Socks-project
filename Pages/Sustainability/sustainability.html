@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="sustainability.css">
 </head>
 <body>
+
+    <!--Dark mode toggle button start-->
+
+    <button id="darkModetoggle">
+    </button>
+
     <div class="content">
         <header>
             <div id="headerlogo">
@@ -90,5 +96,13 @@
             </div>
         </footer>
     </div>
+
+    <!--Dark mode toggle script-->
+    <script>
+        document.getElementById('darkModetoggle').addEventListener('click'), () => {
+            document.body.classLIst.toggle('dark-mode');
+        };
+    </script>
+
 </body>
 </html>

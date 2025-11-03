@@ -235,3 +235,15 @@ footer > div
 }
 
 /*Footer design end*/
+
+/* Dark mode style start*/
+
+#darkModetoggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.dark-mode {
+    background-color: #0f203d;
+}
