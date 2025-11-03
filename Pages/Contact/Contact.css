@@ -81,18 +81,19 @@ h1{
 .gridbox{
     display: grid;
     grid-template-columns: 4fr 2fr;
-    grid-template-rows: 2fr 1fr 2fr;
+    /*grid-template-rows: 30rem 15rem 35rem;*/
     gap : 20px;
-    
+    height: 100%;
 }
 
 .contacttext{
-    grid-column: 1 / 2;
+    grid-column: 1;
     grid-row: 1;
     border-color: #1e407a;
     border-width: 2px;
     border-style: solid;
     padding-left: 2%;
+    padding-bottom: 0;
     
 }
 
@@ -155,16 +156,78 @@ h1{
 
 .form{
     grid-column: 1 / 2;
-    grid-row: 2;
+    grid-row: 2/4;
     border-color: #1e407a;
     border-width: 2px;
     border-style: solid;
     padding-left: 2%;
 }
 
+.fname{
+    color: #1e407a;
+    border-color: #1e407a;
+    border-width: 1.5px;
+    height: 2rem;
+}
 
+.lastname{
+    color: #51b2a2;
+    border-color: #51b2a2;
+    border-width: 1.5px;
+    height: 2rem;
+}
 
+.email{
+    color: #E990B9;
+    border-color: #E990B9;
+    border-width: 1.5px;
+    height: 2rem;
+}
 
+.subj{
+    color: #F15B39;
+    border-color:#F15B39;
+    border-width: 1.5px;
+    height: 2rem;
+}
+
+.ordnum{
+    color: #fecd3e;
+    border-color: #fecd3e;
+    border-width: 1.5px;
+    height: 2rem;
+}
+
+.commtext{
+    color: #1e407a;
+    border-color: #1e407a;
+    border-width: 1.5px;
+}
+
+.commtext{
+    height: 12rem;
+    margin-top: -1rem;
+}
+
+form label, form input {
+  display: block;   
+
+}
+
+label{
+    
+    padding-bottom: 1.5rem;
+}
+
+input[type=text], select
+{
+    width:50rem;
+    
+}
+label
+{
+    font-size: 3rem;
+}
 
 /*Footer design start*/
 footer

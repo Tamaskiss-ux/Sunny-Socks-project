@@ -123,10 +123,12 @@ ul
 /*Main design start*/
 
 /* Don't change this!*/
+
 main
 {
     margin: 5%;
 }
+
 /* Don't change this!*/
 
 h1
@@ -232,7 +234,7 @@ h1
 
 /*Right table start*/
 
-.secoundcolumn
+.secondcolumn
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -242,7 +244,7 @@ h1
     padding-inline: 3%;
 }
 
-.secoundcolumn > div > a >img
+.secondcolumn > div > a >img
 {
     width: 275px;
     display: flex;
@@ -250,7 +252,7 @@ h1
     align-items: center;
 }
 
-.secoundcolumn > .Normal
+.secondcolumn > .Normal
 {
     margin-top: auto;
     margin-bottom: auto;
@@ -292,7 +294,8 @@ footer > div
     margin: 0;
 }
 
-.icons {
+.icons
+{
     display: flex;
     flex-direction: column;
     gap: 3%;
@@ -304,7 +307,8 @@ footer > div
     margin: 0;
 }
 
-.icon-row {
+.icon-row
+{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;

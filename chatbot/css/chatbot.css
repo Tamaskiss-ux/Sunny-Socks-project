@@ -1,28 +1,36 @@
-.chatbot-container {
+.chatbot-container
+{
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 999;
 }
 
-.chatbot-toggle {
+.chatbot-toggle
+{
   background-color: #9D7501;
   border: none;
+  width: 65px;
   color: white;
-  padding: 15px;
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
-  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.chatbot-toggle:hover {
+
+.chatbot-toggle:hover
+{
   background-color: #0F203D;
   transform: scale(1.1);
   transition: 0.3s ease;
 }
 
-
-.chatbot-popup {
+.chatbot-popup
+{
   display: none;
   flex-direction: column;
   width: 320px;
@@ -37,15 +45,15 @@
   transition: all 5s ease;
 }
 
-.chatbot-popup.active {
+.chatbot-popup.active
+{
   display: flex;
   opacity: 1;
   transform: scale(1);
 }
 
-
-
-.chat-header {
+.chat-header
+{
   background-color: #0F203D;
   color: #fff;
   padding: 0px 12px;
@@ -54,7 +62,8 @@
   align-items: center;
 }
 
-.close-btn {
+.close-button
+{
   background: none;
   border: none;
   color: #fff;
@@ -62,7 +71,8 @@
   cursor: pointer;
 }
 
-.chat-body {
+.chat-body
+{
   flex: 1;
   padding: 10px;
   overflow-y: auto;
@@ -70,7 +80,8 @@
   flex-direction: column;
 }
 
-.user-msg, .bot-msg {
+.user-msg, .bot-msg
+{
   max-width: 80%;
   padding: 10px 14px;
   margin: 6px 0;
@@ -79,21 +90,23 @@
   font-size: 14px;
 }
 
-.user-msg {
+.user-msg
+{
   background: linear-gradient(135deg, #9D7501, #b88b2d);
   color: white;
   align-self: flex-end;
 }
 
-.bot-msg {
+.bot-msg
+{
   background: #f4f4f4;
   color: #0F203D;
   border: 1px solid #ddd;
   align-self: flex-start;
 }
 
-
-.quick-questions {
+.quick-questions
+{
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -102,7 +115,8 @@
   border-top: 1px solid #ddd;
 }
 
-.quick-btn {
+.quick-button
+{
   background-color: #9D7501;
   color: #fff;
   border: none;
@@ -113,18 +127,21 @@
   transition: 0.3s;
 }
 
-.quick-btn:hover {
+.quick-button:hover
+{
   background-color: #0F203D;
 }
 
-.chat-input {
+.chat-input
+{
   display: flex;
   border-top: 1px solid #ddd;
   padding: 8px;
   background: #fff;
 }
 
-.chat-input input {
+.chat-input input
+{
   flex: 1;
   border: none;
   outline: none;
@@ -132,7 +149,8 @@
   font-size: 14px;
 }
 
-.chat-input button {
+.chat-input button
+{
   background-color: #9D7501;
   border: none;
   color: white;
