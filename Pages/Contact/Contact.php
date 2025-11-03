@@ -1,14 +1,68 @@
+<?php
+    $errors = [];
+    $fname = $lname = $email = $subject = $ordernumber = $addcomments = "";
+    $successMessage = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST["fname"])) {
+            $errors["fname"] = "Please enter your First Name.";
+        } else {
+            $fname = htmlspecialchars(trim($_POST["fname"]));
+        }
+
+        if (empty($_POST["lname"])) {
+            $errors["lname"] = "Please enter your Last Name.";
+        } else {
+            $lname = htmlspecialchars(trim($_POST["lname"]));
+        }
+
+        if (empty($_POST["email"])) {
+            $errors["email"] = "Please enter your Email.";
+        } elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+            $errors["email"] = "Invalid email format.";
+        } else {
+            $email = htmlspecialchars(trim($_POST["email"]));
+        }
+
+        if (empty($_POST["subject"])) {
+            $errors["subject"] = "Subject is required.";
+        } else {
+            $subject = htmlspecialchars(trim($_POST["subject"]));
+        }
+
+        if (empty($_POST["ordernumber"])) {
+            $errors["ordernumber"] = "Order number is required.";
+        } else {
+            $ordernumber = htmlspecialchars(trim($_POST["ordernumber"]));
+        }
+
+        if (empty($_POST["addcomments"])) {
+            $errors["addcomments"] = "Additional comments are required.";
+        } else {
+            $addcomments = htmlspecialchars(trim($_POST["addcomments"]));
+        }
+
+        if (empty($errors)) {
+            $successMessage = "Thank you, $fname $lname. Your message has been received.";
+        // } else {
+        //     foreach ($errors as $error) {
+        //         echo "<p style='color:red;'>$error</p>";
+        //     }
+        }
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunny | Contact</title>
-    <link rel="icon" type="image/ico" href="../../Fontsandimages/Illustraties/png/Sunny_socks_Yellow.png">
     <link rel="stylesheet" href="Contact.css">
 </head>
 <body>
     <div class="content">
+        <!--header part-->
         <header>
             <div id="headerlogo">
                  <a href="../Homepage/Index.html">
@@ -18,11 +72,13 @@
             <div id="links">
                 <div><a href="../Products/Products.html">Products</a></div>
                 <div><a href="../Sustainability/Sustainability.html">Sustainability</a></div>
-                <div><a href="../Contact/Contact.html">Contact</a></div>
+                <div><a href="../Contact/Contact.php">Contact</a></div>
                 <div><a href="../About/About.html">About us</a></div>
             </div>
         </header>
+        <!--header part-->
 
+        <!-- main part -->
         <main>
             <div class="gridbox">
                 <div class="contacttext">
@@ -41,23 +97,41 @@
                 </div>
                 <div class="form">
                     <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
-                        <label class="fname" for="fnme">First Name:</label>
-                        <input class="fname" type="text" id="fnme" name="fname">
+                        <label class="fname" for="fname">First Name:</label>
+                        <input class="fname" type="text" id="fname" name="fname">
+                        <span class="error"><?php echo $errors["fname"] ?? ""; ?></span>
+
                         <label class="lastname" for="lname">Last Name:</label>
                         <input class="lastname" type="text" id="lname" name="lname">
+                        <span class="error"><?php echo $errors["lname"] ?? ""; ?></span>
+
                         <label class="email" for="email">Email:</label>
                         <input class="email" type="text" id="email" name="email"> 
+                        <span class="error"><?php echo $errors["email"] ?? ""; ?></span>
+
                         <label class="subj" for="subject">Subject:</label>
                         <input class="subj" type="text" id="subject" name="subject">
+                        <span class="error"><?php echo $errors["subject"] ?? ""; ?></span>
+
                         <label class="ordnum" for="ordernumber">Order Number:</label>
                         <input class="ordnum" type="text" id="ordernumber" name="ordernumber">
+                        <span class="error"><?php echo $errors["ordernumber"] ?? ""; ?></span>
+
                         <label class="addcomm" for="addcomments">Additional Comments:</label>
-                        <input class="commtext" type="text" id="addcomments" name="addcomments">
-                    </form>
+                        <textarea class="commtext" id="addcomments" name="addcomments"></textarea>
+                        <span class="error"><?php echo $errors["addcomments"] ?? ""; ?></span>
+                        
+                        <div class="submitbutton">
+                            <input class="submitbtn" type="submit" value="Submit">
+                            <span class="success"><?php echo $successMessage; ?></span>
+                        </div>
                 </div>
             </div>
-        </main>
 
+        </main>
+        <!-- main part -->
+
+        <!--footer part-->
         <footer>
             <div class="footerleftalign">
                 <p>7811 AP, Raadhuisplein 1, Emmen, Nederland</p>
@@ -65,8 +139,7 @@
             <div class="icons">
                 <p>Follow us:</p>
                 <div>
-                <a href="https://www.facebook.com/"><img src="../../Fontsandimages/Social/Facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/"><img src="../../Fontsandimages/Social/Instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/"><img src="../../Fontsandimages/Social/Facebook.png" alt="Facebook"></a>                <a href="https://www.instagram.com/"><img src="../../Fontsandimages/Social/Instagram.png" alt="Instagram"></a>
                 <a href="https://www.linkedin.com/"><img src="../../Fontsandimages/Social/linkedin.png" alt="Linkedin"></a>
                 <a href="https://x.com/"><img src="../../Fontsandimages/Social/Twitter.png" alt="Twitter"></a>
                 </div> 
@@ -74,6 +147,8 @@
                 <div> <p>&#169;2025 Sunny Socks</p>
             </div>
         </footer>
+        <!--footer part-->
+
     </div>
 </body>
 </html>
