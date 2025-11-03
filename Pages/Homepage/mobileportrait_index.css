@@ -87,18 +87,12 @@ button
     position: absolute;
     background-color: #fecd3e;
     min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 #links > li
 {
     display: block;
     font-family: "Nexa Bold";
-}
-
-.dropdown:hover #links
-{
-    display: block;
 }
 
 #links > li > a:active
@@ -117,12 +111,10 @@ ul
 /*Main design start*/
 
 /* Don't change this!*/
-
 main
 {
     margin: 5%;
 }
-
 /* Don't change this!*/
 
 #mainlogo
@@ -159,6 +151,7 @@ b
 {
     width: 350px;
 }
+
 
 .promoimage
 {

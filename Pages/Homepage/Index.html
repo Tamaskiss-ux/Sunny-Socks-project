@@ -6,11 +6,9 @@
     <title>Sunny | Home Page</title>
     <link rel="icon" type="image/ico" href="../../Fontsandimages/Illustraties/png/Sunny_socks_Yellow.png"/>
     <!-- Don't forget to change the name for the title of the page and the css link!-->
-    <link rel="stylesheet" href="desktop_index.css" media="(min-width: 1101px)">
-    <link rel="stylesheet" href="mobileportrait_index.css" media="(max-width: 480px)">
-    <link rel="stylesheet" href="mobilelandscape_index.css" media="(min-width: 480px) and (max-width: 600px)">
-    <link rel="stylesheet" href="tabletportrait_index.css" media="(min-width: 600px) and (max-width: 800px)">
-    <link rel="stylesheet" href="tabletlandscape_index.css" media="(min-width: 801px) and (max-width: 1100px)">
+    <link rel="stylesheet" href="desktop_index.css" media="(min-width: 1115px)">
+    <link rel="stylesheet" href="mobileportrait_index.css" media="(max-width: 800px)">
+    <link rel="stylesheet" href="tabletlandscape_index.css" media="(min-width: 801px) and (max-width: 1115px)">
 </head>
 <body>
     <div class="content">
@@ -24,7 +22,7 @@
                 <ul id="links">
                     <li><a href="../Products/Products.html">Products</a></li>
                     <li><a href="../Sustainability/Sustainability.html">Sustainability</a></li>
-                    <li><a href="../Contact/Contact.php">Contact</a></li>
+                    <li><a href="../Contact/Contact.html">Contact</a></li>
                     <li><a href="../About/About.html">About us</a></li>
                 </ul>
             </div>
@@ -84,5 +82,24 @@
             </div>
         </footer>
     </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".dropdown button");
+        const menuLinks = document.getElementById("links");
+
+    menuButton.addEventListener("click", function (event) {
+        event.stopPropagation();
+        menuLinks.style.display = menuLinks.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", function () {
+        menuLinks.style.display = "none";
+    });
+
+    menuLinks.addEventListener("click", function (event) {
+        event.stopPropagation();
+    });
+    });
+</script>
 </body>
 </html>

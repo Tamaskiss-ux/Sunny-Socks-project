@@ -101,12 +101,10 @@ ul
 /*Main design start*/
 
 /* Don't change this!*/
-
 main
 {
     margin: 5%;
 }
-
 /* Don't change this!*/
 
 #mainlogo > img
@@ -141,6 +139,7 @@ b
 {
     width: 335px;
 }
+
 
 .promoimage
 {
