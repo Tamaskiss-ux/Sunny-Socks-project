@@ -6,11 +6,9 @@
     <title>Sunny | Products</title>
     <link rel="icon" type="image/ico" href="../../Fontsandimages/Illustraties/png/Sunny_socks_Yellow.png"/>
     <!-- Don't forget to change the name for the title of the page and the css link!-->
-    <link rel="stylesheet" href="desktop_Products.css" media="(min-width: 1101px)">
-    <link rel="stylesheet" href="mobileportrait_index.css" media="(max-width: 480px)">
-    <link rel="stylesheet" href="mobilelandscape_Products.css" media="(min-width: 480px) and (max-width: 600px)">
-    <link rel="stylesheet" href="tabletportrait_index.css" media="(min-width: 600px) and (max-width: 800px)">
-    <link rel="stylesheet" href="tabletlandscape_index.css" media="(min-width: 801px) and (max-width: 1100px)">
+    <link rel="stylesheet" href="desktop_products.css" media="(min-width: 1115px)">
+    <link rel="stylesheet" href="tabletlandscape_products.css" media="(min-width: 801px) and (max-width: 1115px)">
+    <link rel="stylesheet" href="mobileportrait_products.css" media="(max-width: 800px)">
 </head>
 <body>
     <div class="content">
@@ -24,9 +22,9 @@
             <div class="dropdown">
                 <button><img src="../../Fontsandimages/menu/menu.png" alt="menu"></button>
                 <ul id="links">
-                    <li><a href="../Products/Products.html">Products</a></li>
+                    <li id="Orange">Products</li>
                     <li><a href="../Sustainability/Sustainability.html">Sustainability</a></li>
-                    <li><a href="../Contact/Contact.php">Contact</a></li>
+                    <li><a href="../Contact/Contact.html">Contact</a></li>
                     <li><a href="../About/About.html">About us</a></li>
                 </ul>
             </div>
@@ -38,7 +36,7 @@
 
            <div class="table">
                 <div class="firstcolumn">
-                    <div>
+                    <div class="mobilemargin">
                         <a href="../Colour selection striped/Colourselectionstriped.html">
                             <img src="../../Fontsandimages/catalogus/catalogus/Sunny_socks_pink_01.jpg" alt="Sunny_socks_pink_01">
                         </a>
@@ -48,8 +46,9 @@
                             Classic Striped Socks
                         </a>
                     </p>
-                    <p class="Description">Our striped socks provide a fun spin on our classic socks.
-                    They are made from 100% cotton, ensuring that your feet stay warm even on the coldest days.
+                    <p class="Description">
+                        Our striped socks provide a fun spin on our classic socks.
+                        They are made from 100% cotton, ensuring that your feet stay warm even on the coldest days.
                     </p>
                     <p class="Available">Available in:</p>
                     <div class="colors">
@@ -62,7 +61,7 @@
                 </div>
 
                 <div class="secondcolumn">
-                    <div>
+                    <div class="mobilemargin">
                         <a href="../Colour selection normal/Colourselectionnormal.html">
                             <img src="../../Fontsandimages/catalogus/catalogus/Sunny_socks_uni_pink.jpg" alt="Sunny_socks_pink_01">
                         </a>
@@ -73,7 +72,7 @@
                         </a>
                     </p>
                     <p class="Description">
-                        The Classics have always been Sunny's signature style.
+                        The Classics have always been Sunny’s signature style.
                         They are made from 100% cotton, ensuring that your feet stay warm even on the coldest days.
                     </p>
                     <p class="Available">Available in:</p>
@@ -106,5 +105,24 @@
             </div>
         </footer>
     </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".dropdown button");
+        const menuLinks = document.getElementById("links");
+
+    menuButton.addEventListener("click", function (event) {
+        event.stopPropagation();
+        menuLinks.style.display = menuLinks.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", function () {
+        menuLinks.style.display = "none";
+    });
+
+    menuLinks.addEventListener("click", function (event) {
+        event.stopPropagation();
+    });
+    });
+</script>
 </body>
 </html>

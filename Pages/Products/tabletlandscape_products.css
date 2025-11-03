@@ -14,7 +14,7 @@
 
 body
 {
-    font-size: 32px;
+    font-size: 20px;
     font-family: "Nexa Light";
     background-color: #51b2a2;
     margin: 0;
@@ -62,12 +62,17 @@ header > #headerlogo > a
 
 #headerlogoimg
 {
-    width: 225px;
+    width: 150px;
 }
 
 button
 {
     display: none;
+}
+
+#Orange
+{
+    color: #f15b39;
 }
 
 #links
@@ -77,7 +82,7 @@ button
     text-align: center;
     align-content: center;
     font-family: "Nexa Bold";
-    font-size: 24px;
+    font-size: 16px;
 }
 
 #links > li > a:hover
@@ -93,11 +98,6 @@ button
 ul
 {
     list-style-type: none;
-}
-
-#Orange
-{
-    color: #f15b39;
 }
 
 /*Header design end*/
@@ -131,7 +131,7 @@ h1
     margin-top: auto;
     margin-bottom: auto;
     font-family: "Nexa Bold";
-    font-size: 38px;
+    font-size: 24px;
 }
 
 .Description
@@ -144,7 +144,7 @@ h1
     margin-top: 0;
     margin-bottom: 0;
     font-family: "Nexa Bold";
-    font-size: 38px;
+    font-size: 24px;
 }
 
 .colors
@@ -157,8 +157,8 @@ h1
 
 .colors > a 
 {
-    height: 175px;
-    width: 40px;
+    height: 150px;
+    width: 30px;
     border-radius: 1rem;
     margin-inline: auto ;
 }
@@ -206,7 +206,7 @@ h1
 
 .firstcolumn > div > a > img
 {
-    width: 275px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,7 +228,7 @@ h1
 
 .secondcolumn > div > a >img
 {
-    width: 275px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,7 +253,7 @@ footer
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 3%;
     padding-right: 3%;
-    font-size: 24px;
+    font-size: 20px;
     font-family: "Nexa Bold";
     border-top: 8px solid #fecd3e;
 }
