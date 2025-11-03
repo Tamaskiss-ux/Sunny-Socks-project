@@ -117,10 +117,12 @@ ul
 /*Main design start*/
 
 /* Don't change this!*/
+
 main
 {
     margin: 5%;
 }
+
 /* Don't change this!*/
 
 #mainlogo
@@ -157,7 +159,6 @@ b
 {
     width: 350px;
 }
-
 
 .promoimage
 {

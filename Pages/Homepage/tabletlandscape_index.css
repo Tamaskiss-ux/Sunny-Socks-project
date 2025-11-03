@@ -101,10 +101,12 @@ ul
 /*Main design start*/
 
 /* Don't change this!*/
+
 main
 {
     margin: 5%;
 }
+
 /* Don't change this!*/
 
 #mainlogo > img
@@ -140,7 +142,6 @@ b
     width: 250px;
 }
 
-
 .promoimage
 {
     display: flex;
@@ -161,7 +162,7 @@ b
     grid-column: 2;
 }
 
-.secoundtext > p > a
+.secondtext > p > a
 {
     color: #f15b39;
 }
