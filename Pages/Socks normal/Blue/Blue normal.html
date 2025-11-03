@@ -6,8 +6,9 @@
     <title>Sunny | Classic Socks - Blue</title>
     <link rel="icon" type="image/ico" href="../../../Fontsandimages/Illustraties/png/Sunny_socks_Yellow.png">
     <!-- Don't forget to change the name for the title of the page and the css link!-->
-    <link rel="stylesheet" href="desktop_blue_normal.css" media="(min-width: 1101px)">
-    <link rel="stylesheet" href="tabletlandscape_blue_normal.css" media="(min-width: 801px) and (max-width: 1100px)">
+    <link rel="stylesheet" href="desktop_Blue normal.css" media="(min-width: 1115px)">
+    <link rel="stylesheet" href="tabletlandscape_Blue normal.css" media="(min-width: 801px) and (max-width: 1115px)">
+    <link rel="stylesheet" href="mobileportrait_Blue normal.css" media="(max-width: 800px)">
 </head>
 <body>
     <div class="content">
@@ -18,12 +19,15 @@
                     <img id="headerlogoimg" src="../../../Fontsandimages/Logos/png/sunny_logos_blue.png" alt="Logos Blue">
                 </a>
             </div>
-            <ul id="links">
-                <li><a href="../../Products/Products.html"></a>Products</li>
-                <li><a href="../../Sustainability/Sustainability.html">Sustainability</a></li>
-                <li><a href="../../Contact/Contact.php">Contact</a></li>
-                <li><a href="../../About/About.html">About us</a></li>
-            </ul>
+            <div class="dropdown">
+                <button><img src="../../../Fontsandimages/menu/menu.png" alt="menu"></button>
+                <ul id="links">
+                    <li><a href="../../Products/Products.html">Products</a></li>
+                    <li><a href="../../Sustainability/Sustainability.html">Sustainability</a></li>
+                    <li><a href="../../Contact/Contact.html">Contact</a></li>
+                    <li><a href="../../About/About.html">About us</a></li>
+                </ul>
+            </div>
         </header>
 
         <!-- You can add in anything here and to the css part as well-->
@@ -36,9 +40,9 @@
 
                 <h1>Classic Socks - Blue</h1>
                 
-                <a>
+                <div>
                     <img src="../../../Fontsandimages/packaging/png/catalogus_sokken_uni_blue.png" alt="blue socks" class="blue">
-                </a>
+                </div>
                 
                 <h1>Sizes: 37 - 38 - 39 - 40</h1>
 
@@ -64,5 +68,24 @@
             </div>
         </footer>
     </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".dropdown button");
+        const menuLinks = document.getElementById("links");
+
+    menuButton.addEventListener("click", function (event) {
+        event.stopPropagation();
+        menuLinks.style.display = menuLinks.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", function () {
+        menuLinks.style.display = "none";
+    });
+
+    menuLinks.addEventListener("click", function (event) {
+        event.stopPropagation();
+    });
+    });
+</script>
 </body>
 </html>

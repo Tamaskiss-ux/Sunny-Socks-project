@@ -14,13 +14,14 @@
 
 body
 {
-    font-size: 24px ;
+    font-size: 20px;
     font-family: "Nexa Bold";
     background-color: #51b2a2;
     margin: 0;
     padding: 0;
     margin-left: 3%;
     color: #1e407a;
+    width: 97%;
 }
 
 .content
@@ -41,7 +42,7 @@ a
 header
 {
     display: grid;
-    border-bottom: 10px solid #fecd3e;
+    border-bottom: 8px solid #fecd3e;
     grid-template-columns: 4fr 5fr;
     padding-left: 3%;
 }
@@ -53,7 +54,7 @@ header > #headerlogo
     justify-content: flex-start;
 }
 
-header > #headerlogo > a
+header > #headerlogo 
 {
     display: flex;
     align-items: center;
@@ -63,6 +64,11 @@ header > #headerlogo > a
 #headerlogoimg
 {
     width: 150px;
+}
+
+button
+{
+    display: none;
 }
 
 #links
@@ -112,7 +118,7 @@ main
     text-wrap: wrap;
 }
 
-.middle > a
+.middle > div
 {
     margin-inline: auto;
     display: flex;
@@ -120,9 +126,9 @@ main
     align-items: center;
 }
 
-.middle > a > img
+.middle > div > img
 {
-    height: 450px;
+    height: 600px;
 }
 
 /*Main design end*/
@@ -134,58 +140,38 @@ footer
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 3%;
-    padding-right: 3%;
-    font-size: 20px;
+    font-size: 24px;
     font-family: "Nexa Bold";
-    border-top: 8px solid #fecd3e;
+    border-top: 10px solid #fecd3e;
 }
 
-footer > div
+footer > div > p
 {
-    display: flex;
-    align-items: center;
+    text-align: center;
+    align-content: center;
 }
 
 .footerleftalign
 {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    width: 250px;
 }
 
 .footerleftalign > p
 {
     margin: 0;
+    text-align: left;
 }
 
-.icons {
-    display: flex;
-    flex-direction: column;
-    gap: 3%;
-    margin-block: auto;
-}
-
-.icons > p
+.icons
 {
-    margin: 0;
-}
-
-.icon-row {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     gap: 10px;
-    max-width: 120px;
 }
 
-.icons > div > a > img
+footer > .icons > div > a > img
 {
-    width: 45px;
-}
-
-.footerrightalign
-{
-    display: flex;
-    margin-left: auto;
+    width: 50px;
 }
 
 /*Footer design end*/
