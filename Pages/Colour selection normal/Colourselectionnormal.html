@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunny | Classic Socks Selection</title>
     <link rel="icon" type="image/ico" href="../../Fontsandimages/Illustraties/png/Sunny_socks_Yellow.png"/>
-    <link rel="stylesheet" href="desktop_colourselectionnormal.css" media="(min-width: 1101px)">
-    <link rel="stylesheet" href="tabletlandscape_colourselectionnormal.css" media="(min-width: 801px) and (max-width: 1100px)">
+    <link rel="stylesheet" href="desktop_colourselectionnormal.css" media="(min-width: 1115px)">
+    <link rel="stylesheet" href="tabletlandscape_colourselectionnormal.css" media="(min-width: 801px) and (max-width: 1115px)">
+    <link rel="stylesheet" href="mobileportrait_colorselectionnormal.css" media="(max-width: 800px)">
 </head>
 <body>
     <div class="content">
@@ -16,27 +17,30 @@
                     <img id="headerlogoimg" src="../../Fontsandimages/Logos/png/sunny_logos_blue.png" alt="Logos Blue">
                 </a>
             </div>
-            <ul id="links">
-                <li><a href="../Products/Products.html">Products</a></li>
-                <li><a href="../Sustainability/Sustainability.html">Sustainability</a></li>
-                <li><a href="../Contact/Contact.php">Contact</a></li>
-                <li><a href="../About/About.html">About us</a></li>
-            </ul>
+            <div class="dropdown">
+                <button><img src="../../Fontsandimages/menu/menu.png" alt="menu"></button>
+                <ul id="links">
+                    <li><a href="../Products/Products.html">Products</a></li>
+                    <li><a href="../Sustainability/Sustainability.html">Sustainability</a></li>
+                    <li><a href="../Contact/Contact.html">Contact</a></li>
+                    <li><a href="../About/About.html">About us</a></li>
+                </ul>
+            </div>
         </header>
 
         <main>
             <div>
-                <h1>Colour Selection</h1>
+                <h1 id="center">Colour Selection</h1>
             </div>
             <div class="images">
-                <a href="../Socks normal/Blue/Blue normal.html"><img src="../../Fontsandimages/packaging/png/catalogus_sokken_uni_blue.png" alt="blue socks" class="blue"></a>
-                <a href="../Socks normal/Green/Green normal.html"><img src="../../Fontsandimages/packaging/png/catalogus_sokken_uni_green.png" alt="green socks" class="green"></a>
-                <a href="../Socks normal/Pink/Pink normal.html"><img src="../../Fontsandimages/packaging/png/catalogus_sokken_uni_pink.png" alt="pink socks" class="pink"></a>
-                <a href="../Socks normal/Yellow/Yellow normal.html"><img src="../../Fontsandimages/packaging/png/catalogus_sokken_uni_yellow.png" alt="yellow socks" class="yellow"></a>
-                <a href="../Socks normal/Red/Red normal.html"><img src="../../Fontsandimages/packaging/png/catalogus_sokken_uni_red.png" alt="red socks" class="red"></a>
+                <div><a href="../Socks normal/Blue/Blue normal.html"><img src="../../Fontsandimages/packaging/png/catalogus_sokken_uni_blue.png" alt="blue socks" class="blue"></a></div>
+                <div><a href="../Socks normal/Green/Green normal.html"><img src="../../Fontsandimages/packaging/png/catalogus_sokken_uni_green.png" alt="green socks" class="green"></a></div>
+                <div><a href="../Socks normal/Pink/Pink normal.html"><img src="../../Fontsandimages/packaging/png/catalogus_sokken_uni_pink.png" alt="pink socks" class="pink"></a></div>
+                <div><a href="../Socks normal/Yellow/Yellow normal.html"><img src="../../Fontsandimages/packaging/png/catalogus_sokken_uni_yellow.png" alt="yellow socks" class="yellow"></a></div>
+                <div><a href="../Socks normal/Red/Red normal.html"><img src="../../Fontsandimages/packaging/png/catalogus_sokken_uni_red.png" alt="red socks" class="red"></a></div>
             </div>
             <div>
-                <h2><a href="../Products/Products.html">&lt;Back</a></h2>
+                <h1><a href="../Products/Products.html">&lt;Back</a></h1>
             </div>
         </main>
 
@@ -58,5 +62,24 @@
             </div>
         </footer>
     </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".dropdown button");
+        const menuLinks = document.getElementById("links");
+
+    menuButton.addEventListener("click", function (event) {
+        event.stopPropagation();
+        menuLinks.style.display = menuLinks.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", function () {
+        menuLinks.style.display = "none";
+    });
+
+    menuLinks.addEventListener("click", function (event) {
+        event.stopPropagation();
+    });
+    });
+</script>
 </body>
 </html>

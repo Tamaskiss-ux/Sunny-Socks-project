@@ -15,12 +15,13 @@
 body
 {
     font-size: 32px;
-    font-family: "Nexa Bold";
+    font-family: "Nexa Light";
     background-color: #51b2a2;
     margin: 0;
     padding: 0;
     margin-left: 3%;
     color: #1e407a;
+    width: 97%;
 }
 
 .content
@@ -53,28 +54,51 @@ header > #headerlogo
     justify-content: flex-start;
 }
 
+header > #headerlogo 
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 #headerlogoimg
 {
     width: 225px;
 }
 
-#links
+button
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    text-align: center;
-    align-content: center;
-    font-family: "Nexa Bold";
-    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
 }
 
-#links > li > a:hover
+.dropdown
 {
-    text-decoration: underline;
+    margin-top: 5px;
+    position: relative;
+}
+
+#links
+{
+    position: absolute;
+    right: 0;
+    top: 50px;
+    display: none;
+    position: absolute;
+    background-color: #fecd3e;
+    min-width: 200px;
+}
+
+#links > li
+{
+    display: block;
+    font-family: "Nexa Bold";
 }
 
 #links > li > a:active
 {
+    text-decoration: underline;
     color: #f15b39;
 }
 
@@ -88,49 +112,31 @@ ul
 /*Main design start*/
 
 /* Don't change this!*/
-
 main
 {
     margin: 5%;
 }
-
 /* Don't change this!*/
+
+h1
+{
+    font-size: 48px;
+    font-family: "Nexa Bold";
+}
+
+#center
+{
+    text-align: center;
+}
 
 .images
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-inline: 10%;
+    margin-inline: 25%;
 }
 
-.images > a >img
+.images > div > a > img
 {
     width: 100%;
-}
-
-.blue
-{
-    margin-top: 50%;
-}
-
-.green
-{
-    margin-top: 100%;
-}
-
-.pink
-{
-    margin-top: 50%;
-}
-
-.yellow
-{
-    margin-top: 0%;
-}
-
-.red
-{
-    margin-top: 50%;
 }
 
 /*Main design end*/
@@ -139,41 +145,56 @@ main
 
 footer
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     padding-left: 3%;
+    padding-right: 3%;
     font-size: 24px;
     font-family: "Nexa Bold";
     border-top: 10px solid #fecd3e;
 }
 
-footer > div > p
+footer > div
 {
-    text-align: center;
-    align-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .footerleftalign
 {
-    width: 250px;
+    display: flex;
+    text-align: center;
 }
 
 .footerleftalign > p
 {
-    margin: 0;
-    text-align: left;
+    margin-inline: auto;
 }
 
-.icons
+.icons 
+{
+    margin-block: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.icon-row 
 {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
+    max-width: 120px;
 }
 
-footer > .icons > div > a > img
+.icons > div > a > img
 {
     width: 50px;
+}
+
+.footerrightalign > p
+{
+    margin-inline: auto;
+    display: flex;
+    text-align: center;
 }
 
 /*Footer design end*/

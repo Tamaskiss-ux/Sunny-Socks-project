@@ -90,6 +90,11 @@ ul
     list-style-type: none;
 }
 
+button
+{
+    display: none;
+}
+
 /*Header design end*/
 
 /*Main design start*/
@@ -110,7 +115,7 @@ main
     margin-inline: 10%;
 }
 
-.images > a >img
+.images > div > a > img
 {
     width: 100%;
 }
