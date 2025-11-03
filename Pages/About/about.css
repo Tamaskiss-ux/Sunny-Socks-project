@@ -1,22 +1,27 @@
-@font-face {
+@font-face
+{
   font-family: "Nexa Light";
   src: url(../../Fontsandimages/Fonts/Nexa\ Light.otf);
 }
 
-@font-face {
+@font-face
+{
   font-family: "Nexa Bold";
   src: url(../../Fontsandimages/Fonts/Nexa\ Bold.otf);
 }
 
-* {
+*
+{
   box-sizing: border-box;
 }
 
-html {
+html
+{
   scroll-behavior: smooth;
 }
 
-body {
+body
+{
   display: flex;
   justify-content: center;
   margin: 0px;
@@ -25,20 +30,24 @@ body {
   font-size: 32px;
   font-family: "Nexa Light";
 }
-.main-bg{
+
+.main-bg
+{
   background-color: white;
 }
-.quick-button,
-.chat-input button {
 
+.quick-button,
+.chat-input button
+{
   transition: all 0.3s ease-in-out;
 }
 
 .chat-input button:hover,
-.quick-button:hover {
-
+.quick-button:hover
+{
   background-color: #0F203D;
 }
+
 header
 {
   display: grid;
@@ -55,16 +64,12 @@ header > #headerlogo
   justify-content: flex-start;
 }
 
-header > #headerlogo 
+a
 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-a{
   color: #1e407a;
   text-decoration: none;
 }
+
 #headerlogoimg
 {
   width: 225px;
@@ -100,11 +105,13 @@ ul
   list-style-type: none;
 }
 
-.grid { 
+.grid
+{ 
   display: flex; width: 100%;
 }
 
-.box-1 h2 {
+.box-1 h2
+{
   font-weight: 700;
   font-family: "Nexa Bold";
   font-size: 38px;
@@ -112,26 +119,34 @@ ul
   color: #E990B9;
 }
 
-.img { width: 85%; }
+.img
+{
+  width: 85%;
+}
 
-.pride-img { 
+.pride-img
+{ 
   display: flex; 
   justify-content: end;
 }
 
-.box-1 {
+.box-1
+{
   width: 50%;
   padding: 20px 30px;
 }
-.box-1 p {
+
+.box-1 p
+{
   font-size: 32px;
   margin: 0px;
   color: #1e407a;
 }
 
-
-.box-2 { width: 50%; }
-
+.box-2
+{
+  width: 50%;
+}
 
 footer
 {
@@ -178,15 +193,17 @@ footer > div
   margin-left: auto;
 }
 
-/*Chatbot css*/
-.chatbot-container {
+/*Chatbott CSS*/
+.chatbot-container
+{
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 999;
 }
 
-.chatbot-toggle {
+.chatbot-toggle
+{
   background-color: #9D7501;
   border: none;
   width: 65px;
@@ -200,14 +217,16 @@ footer > div
   justify-content: center;
   align-items: center;
 }
-.chatbot-toggle:hover {
+
+.chatbot-toggle:hover
+{
   background-color: #0F203D;
   transform: scale(1.1);
   transition: 0.3s ease;
 }
 
-
-.chatbot-popup {
+.chatbot-popup
+{
   display: none;
   flex-direction: column;
   width: 320px;
@@ -222,15 +241,15 @@ footer > div
   transition: all 5s ease;
 }
 
-.chatbot-popup.active {
+.chatbot-popup.active
+{
   display: flex;
   opacity: 1;
   transform: scale(1);
 }
 
-
-
-.chat-header {
+.chat-header
+{
   background-color: #0F203D;
   color: #fff;
   padding: 0px 12px;
@@ -239,7 +258,8 @@ footer > div
   align-items: center;
 }
 
-.close-button {
+.close-button
+{
   background: none;
   border: none;
   color: #fff;
@@ -247,7 +267,8 @@ footer > div
   cursor: pointer;
 }
 
-.chat-body {
+.chat-body
+{
   flex: 1;
   padding: 10px;
   overflow-y: auto;
@@ -255,7 +276,8 @@ footer > div
   flex-direction: column;
 }
 
-.user-msg, .bot-msg {
+.user-msg, .bot-msg
+{
   max-width: 80%;
   padding: 10px 14px;
   margin: 6px 0;
@@ -264,13 +286,15 @@ footer > div
   font-size: 14px;
 }
 
-.user-msg {
+.user-msg
+{
   background: linear-gradient(135deg, #9D7501, #b88b2d);
   color: white;
   align-self: flex-end;
 }
 
-.bot-msg {
+.bot-msg
+{
   background: #f4f4f4;
   color: #0F203D;
   border: 1px solid #ddd;
@@ -278,7 +302,8 @@ footer > div
 }
 
 
-.quick-questions {
+.quick-questions
+{
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -287,7 +312,8 @@ footer > div
   border-top: 1px solid #ddd;
 }
 
-.quick-button {
+.quick-button
+{
   background-color: #9D7501;
   color: #fff;
   border: none;
@@ -298,18 +324,21 @@ footer > div
   transition: 0.3s;
 }
 
-.quick-button:hover {
+.quick-button:hover
+{
   background-color: #0F203D;
 }
 
-.chat-input {
+.chat-input
+{
   display: flex;
   border-top: 1px solid #ddd;
   padding: 8px;
   background: #fff;
 }
 
-.chat-input input {
+.chat-input input
+{
   flex: 1;
   border: none;
   outline: none;
@@ -317,7 +346,8 @@ footer > div
   font-size: 14px;
 }
 
-.chat-input button {
+.chat-input button
+{
   background-color: #9D7501;
   border: none;
   color: white;
@@ -325,13 +355,18 @@ footer > div
   border-radius: 6px;
   cursor: pointer;
 }
-@media screen and (max-width: 500px) {
-  .chatbot-popup {
+
+@media screen and (max-width: 500px)
+{
+  .chatbot-popup
+  {
     width: 90%;
     height: 70vh;
     right: 5%;
   }
-  .chatbot-toggle {
+
+  .chatbot-toggle
+  {
     background-color: #b78506;
     border: none;
     color: white;
