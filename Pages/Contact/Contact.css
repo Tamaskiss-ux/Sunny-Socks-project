@@ -67,18 +67,21 @@ header > #links
 
 /*Header design end*/
 
-/*main starts*/
+/*Main design starts*/
 
-main{
+main
+{
     margin: 5%;
 }
 
-h1{
+h1
+{
     font-family: "Nexa Bold";
     font-size: 48px;
 }
 
-.gridbox{
+.gridbox
+{
     display: grid;
     grid-template-columns: 4fr 2fr;
     /*grid-template-rows: 30rem 15rem 35rem;*/
@@ -86,7 +89,8 @@ h1{
     height: 100%;
 }
 
-.contacttext{
+.contacttext
+{
     grid-column: 1;
     grid-row: 1;
     border-color: #1e407a;
@@ -94,10 +98,10 @@ h1{
     border-style: solid;
     padding-left: 2%;
     padding-bottom: 0;
-    
 }
 
-.addinform{
+.addinform
+{
     grid-column: 2;
     grid-row: 1/3;
     border-color: #1e407a;
@@ -105,15 +109,16 @@ h1{
     border-style: solid;
 }
 
-.add-grid{
+.add-grid
+{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 5px;
-    
 }
 
-.add-header{
+.add-header
+{
     font-family: "Nexa Bold";
     font-size: 48px;
     grid-column: 1/3;
@@ -121,40 +126,44 @@ h1{
     padding-bottom: -10%;
 }
 
-.img-left{
+.img-left
+{
     width: 90%;
     height: 100%;;
-    
 }
 
-.img-right{
+.img-right
+{
     grid-column: 2;
     grid-row: 2;
     width: 90%;
     height: 100%;
-    
 }
 
-.img-bottom-r{
+.img-bottom-r
+{
     grid-column: 2;
     grid-row: 3;
     width: 90%;
     height: 100%;
 }
 
-.img-bottom-l{
+.img-bottom-l
+{
     grid-column: 1;
     grid-row: 3;
     width: 90%;
     height: 100%;
 }
 
-.addinform img{
+.addinform img
+{
     margin-top: -10%;
     padding-left: 5%;
 }
 
-.form{
+.form
+{
     grid-column: 1 / 2;
     grid-row: 2/4;
     border-color: #1e407a;
@@ -163,73 +172,81 @@ h1{
     padding-left: 2%;
 }
 
-.fname{
+.fname
+{
     color: #1e407a;
     border-color: #1e407a;
     border-width: 1.5px;
     height: 2rem;
 }
 
-.lastname{
+.lastname
+{
     color: #51b2a2;
     border-color: #51b2a2;
     border-width: 1.5px;
     height: 2rem;
 }
 
-.email{
+.email
+{
     color: #E990B9;
     border-color: #E990B9;
     border-width: 1.5px;
     height: 2rem;
 }
 
-.subj{
+.subj
+{
     color: #F15B39;
     border-color:#F15B39;
     border-width: 1.5px;
     height: 2rem;
 }
 
-.ordnum{
+.ordnum
+{
     color: #fecd3e;
     border-color: #fecd3e;
     border-width: 1.5px;
     height: 2rem;
 }
 
-.commtext{
+.commtext
+{
     color: #1e407a;
     border-color: #1e407a;
     border-width: 1.5px;
 }
 
-.commtext{
+.commtext
+{
     height: 12rem;
     margin-top: -1rem;
 }
 
-form label, form input {
+form label, form input
+{
   display: block;   
-
 }
 
-label{
-    
+label
+{ 
     padding-bottom: 1.5rem;
 }
 
 input[type=text], select
 {
     width:50rem;
-    
 }
+
 label
 {
     font-size: 3rem;
 }
 
-/*Footer design start*/
+/*Footer design starts*/
+
 footer
 {
     display: grid;

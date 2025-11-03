@@ -8,7 +8,6 @@
 </head>
 <body>
     <div class="content">
-        <!--header part-->
         <header>
             <div id="headerlogo">
                  <a href="../Homepage/Index.html">
@@ -22,9 +21,7 @@
                 <div><a href="../About/About.html">About us</a></div>
             </div>
         </header>
-        <!--header part-->
 
-        <!-- main part -->
         <main>
             <div class="gridbox">
                 <div class="contacttext">
@@ -55,17 +52,11 @@
                         <input class="ordnum" type="text" id="ordernumber" name="ordernumber">
                         <label class="addcomm" for="addcomments">Additional Comments:</label>
                         <input class="commtext" type="text" id="addcomments" name="addcomments">
-                        
-
-                    
+                    </form>
                 </div>
-
             </div>
-
         </main>
-        <!-- main part -->
 
-        <!--footer part-->
         <footer>
             <div class="footerleftalign">
                 <p>7811 AP, Raadhuisplein 1, Emmen, Nederland</p>
@@ -73,7 +64,8 @@
             <div class="icons">
                 <p>Follow us:</p>
                 <div>
-                <a href="https://www.facebook.com/"><img src="../../Fontsandimages/Social/Facebook.png" alt="Facebook"></a>                <a href="https://www.instagram.com/"><img src="../../Fontsandimages/Social/Instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/"><img src="../../Fontsandimages/Social/Facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="../../Fontsandimages/Social/Instagram.png" alt="Instagram"></a>
                 <a href="https://www.linkedin.com/"><img src="../../Fontsandimages/Social/linkedin.png" alt="Linkedin"></a>
                 <a href="https://x.com/"><img src="../../Fontsandimages/Social/Twitter.png" alt="Twitter"></a>
                 </div> 
@@ -81,8 +73,6 @@
                 <div> <p>&#169;2025 Sunny Socks</p>
             </div>
         </footer>
-        <!--footer part-->
-
     </div>
 </body>
 </html>
