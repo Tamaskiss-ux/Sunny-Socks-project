@@ -193,7 +193,7 @@ footer > div
   margin-left: auto;
 }
 
-/*Chatbott CSS*/
+/*Chatbot css*/
 .chatbot-container
 {
   position: fixed;
@@ -275,7 +275,12 @@ footer > div
   display: flex;
   flex-direction: column;
 }
-
+button.quick-btn {
+    background-color: #0f203d;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
 .user-msg, .bot-msg
 {
   max-width: 80%;
@@ -300,7 +305,6 @@ footer > div
   border: 1px solid #ddd;
   align-self: flex-start;
 }
-
 
 .quick-questions
 {
@@ -364,16 +368,15 @@ footer > div
     height: 70vh;
     right: 5%;
   }
-
-  .chatbot-toggle
-  {
-    background-color: #b78506;
-    border: none;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+  .chatbot-toggle {
+  background-color: #b78506;
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
   }
 }
+

@@ -27,14 +27,11 @@ function addMessage(message, sender) {
 
 //   Typing Effect + Bot Reply Function
 function showTypingEffect(message) {
-  // Step 1: Show "Typing..."
   const typingMsg = addMessage("Typing...", "bot");
-
-  // Step 2: Wait and then show actual reply
   setTimeout(() => {
-    typingMsg.remove(); // remove typing text
+    typingMsg.remove();
     botReply(message);
-  }, 3000); // typing delay 1 second
+  }, 1000); // reduced delay for faster response
 }
 
 //   Bot Reply Logic
@@ -42,12 +39,33 @@ function botReply(message) {
   const lower = message.toLowerCase();
   let reply = "";
 
-  if (lower.includes("shipping")) reply = "We ship worldwide! Orders usually arrive within 5–7 days.";
-  else if (lower.includes("return")) reply = "You can return your items within 30 days of purchase.";
-  else if (lower.includes("pride")) reply = "Our Pride Collection celebrates inclusivity and love for all.";
-  else if (lower.includes("sustain")) reply = "We focus on eco-friendly and sustainable products.";
-  else if (lower === "ok") reply = "Thank you for confirming!";
-  else reply = "Sorry, I do not understand your message.";
+  // --- basic responses ---
+  if (lower.includes("hi") || lower.includes("hello") || lower.includes("hey"))
+    reply = "Hello! 👋 How can I help you today?";
+  else if (lower.includes("help"))
+    reply = "Sure! You can ask about our shipping, returns, or products.";
+  else if (lower.includes("about"))
+    reply = "We’re an online store focused on quality and customer satisfaction.";
+  else if (lower.includes("contact"))
+    reply = "You can reach us via our contact page or email support@example.com.";
+  else if (lower.includes("thank"))
+    reply = "You're very welcome! 😊";
+  else if (lower.includes("bye"))
+    reply = "Goodbye! Have a wonderful day 🌸";
+
+  // --- existing keyword replies ---
+  else if (lower.includes("shipping"))
+    reply = "We ship worldwide! Orders usually arrive within 5–7 days.";
+  else if (lower.includes("return"))
+    reply = "You can return your items within 30 days of purchase.";
+  else if (lower.includes("pride"))
+    reply = "Our Pride Collection celebrates inclusivity and love for all.";
+  else if (lower.includes("sustain"))
+    reply = "We focus on eco-friendly and sustainable products.";
+  else if (lower === "ok")
+    reply = "Thank you for confirming!";
+  else
+    reply = "Sorry, I didn’t quite understand that. Could you please rephrase?";
 
   addMessage(reply, "bot");
 }
