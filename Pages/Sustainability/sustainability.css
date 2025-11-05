@@ -160,6 +160,11 @@ h3
     margin-top: 0;
 }
 
+.rightside > .charities > ul > li > a
+{
+    font-weight: bold;
+}
+
 /* Don't change this!*/
 
 main
