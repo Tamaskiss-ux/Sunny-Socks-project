@@ -18,7 +18,7 @@
                 <img id="headerlogoimg" src="../../Fontsandimages/Logos/png/sunny_logos_orange.png" alt="Logos Orange">
             </div>
             <div class="dropdown">
-                <button><img src="../../Fontsandimages/menu/menu.png" alt="menu"></button>
+                <button class="button"><img src="../../Fontsandimages/menu/menu.png" alt="menu"></button>
                 <ul id="links">
                     <li><a href="../Products/Products.html">Products</a></li>
                     <li><a href="../Sustainability/Sustainability.html">Sustainability</a></li>
@@ -83,23 +83,26 @@
         </footer>
     </div>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuButton = document.querySelector(".dropdown button");
-        const menuLinks = document.getElementById("links");
+document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.querySelector(".dropdown button");
+    const menuLinks = document.getElementById("links");
 
     menuButton.addEventListener("click", function (event) {
         event.stopPropagation();
         menuLinks.style.display = menuLinks.style.display === "block" ? "none" : "block";
     });
 
-    document.addEventListener("click", function () {
-        menuLinks.style.display = "none";
+    document.addEventListener("click", function (event) {
+        // Only hide if the click is outside the dropdown
+        if (!menuButton.contains(event.target) && !menuLinks.contains(event.target)) {
+            menuLinks.style.display = "none";
+        }
     });
 
     menuLinks.addEventListener("click", function (event) {
         event.stopPropagation();
     });
-    });
+});
 </script>
 </body>
 </html>

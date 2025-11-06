@@ -65,10 +65,14 @@ header > #headerlogo > a
     width: 150px;
 }
 
-button
+@media (min-width: 801px) 
 {
-    display: none;
+    .menu
+    {
+        display: none;
+    }
 }
+
 
 #Orange
 {
