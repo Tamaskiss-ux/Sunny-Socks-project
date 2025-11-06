@@ -1,3 +1,19 @@
+<?php
+$day = date('l');
+
+$colors = [
+    'Saturday' => ['bg' => '#fecd3e', 'text' => '#fecd3e'],
+    'Sunday'   => ['bg' => '#fecd3e', 'text' => '#fecd3e'],
+];
+
+if (isset($colors[$day])) {
+    $bgColor = $colors[$day]['bg'];
+    $textColor = $colors[$day]['text'];
+} else {
+    $bgColor = null;
+    $textColor = null;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +25,43 @@
     <link rel="stylesheet" href="desktop_index.css" media="(min-width: 1115px)">
     <link rel="stylesheet" href="mobileportrait_index.css" media="(max-width: 800px)">
     <link rel="stylesheet" href="tabletlandscape_index.css" media="(min-width: 801px) and (max-width: 1115px)">
+    <style>
+    
+    body
+    {
+        background-color: <?= $bgColor ?>;
+        color: <?= $textColor ?>;
+    }
+
+    a
+    {
+        color: <?= $textColor ?>;
+    }
+
+    </style>
 </head>
 <body>
     <div class="content">
         <!-- Only change things in the header if you are going to add in more content to the top but than add it in to the css as well-->
         <header>
             <div id="headerlogo">
-                <img id="headerlogoimg" src="../../Fontsandimages/Logos/png/sunny_logos_orange.png" alt="Logos Orange">
+                <?php
+                    $day = date('l');
+
+                    $images = [
+                        'Monday'    => '../../Fontsandimages/Logos/png/sunny_logos_orange.png',
+                        'Tuesday'   => '../../Fontsandimages/Logos/png/sunny_logos_orange.png',
+                        'Wednesday' => '../../Fontsandimages/Logos/png/sunny_logos_orange.png',
+                        'Thursday'  => '../../Fontsandimages/Logos/png/sunny_logos_orange.png',
+                        'Friday'    => '../../Fontsandimages/Logos/png/sunny_logos_orange.png',
+                        'Saturday'  => '../../Fontsandimages/Logos/png/sunny_logos_yellow.png',
+                        'Sunday'    => '../../Fontsandimages/Logos/png/sunny_logos_yellow.png'
+                    ];
+
+                    $imagePath = isset($images[$day]) ? $images[$day] : '../../Fontsandimages/Logos/png/default_logo.png';
+
+                    echo "<img id='headerlogoimg' src='$imagePath' alt='$day Logo'>";
+                ?>
             </div>
             <div class="dropdown">
                 <button class="button"><img src="../../Fontsandimages/menu/menu.png" alt="menu"></button>
