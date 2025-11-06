@@ -173,6 +173,8 @@ footer > div
 
 .footerleftalign
 {
+    width: 250px;
+    text-wrap: wrap;
     display: flex;
     flex-direction: column;
     align-items: start;
