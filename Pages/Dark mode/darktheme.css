@@ -6,6 +6,10 @@
   color: white;
 }
 
+.dark-mode main {
+  background-image: none;
+}
+
 .dark-mode .content {
   background-color: #0f203d;
 }
