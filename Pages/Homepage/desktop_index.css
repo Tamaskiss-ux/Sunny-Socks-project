@@ -54,7 +54,7 @@ header > #headerlogo
     justify-content: flex-start;
 }
 
-header > #headerlogo 
+header > #headerlogo > a
 {
     display: flex;
     align-items: center;
@@ -101,11 +101,13 @@ ul
 /*Main design start*/
 
 /* Don't change this!*/
+
 main
 {
     background-image: url("../../Fontsandimages/background.png");
-    margin: 5%;
+    padding: 5%;
 }
+
 /* Don't change this!*/
 
 #mainlogo > img

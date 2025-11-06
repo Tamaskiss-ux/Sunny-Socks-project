@@ -65,15 +65,18 @@
         <!--header part-->
         <header>
             <div id="headerlogo">
-                 <a href="../Homepage/Index.html">
-                 <img id="headerlogoimg" src="../../Fontsandimages/Logos/png/sunny_logos_orange.png" alt="Logos Orange">
-                 </a>
+                <a href="../Homepage/Index.php">
+                    <img id="headerlogoimg" src="../../Fontsandimages/Logos/png/sunny_logos_blue.png" alt="Logos Orange">
+                </a>
             </div>
-            <div id="links">
-                <div><a href="../Products/Products.html">Products</a></div>
-                <div><a href="../Sustainability/Sustainability.html">Sustainability</a></div>
-                <div><a href="../Contact/Contact.php">Contact</a></div>
-                <div><a href="../About/About.html">About us</a></div>
+            <div class="dropdown">
+                <button class="button"><img src="../../Fontsandimages/menu/menu.png" alt="menu"></button>
+                <ul id="links">
+                    <li><a href="../Products/Products.html">Products</a></li>
+                    <li><a href="../Sustainability/Sustainability.html">Sustainability</a></li>
+                    <li id="Orange">Contact</li>
+                    <li><a href="../About/About.html">About us</a></li>
+                </ul>
             </div>
         </header>
         <!--header part-->
@@ -127,7 +130,9 @@
                         </div>
                 </div>
             </div>
-
+            <div id="forofor">
+                <a href="../404 page/404 page.html">Click here for the 404 page</a>
+            </div>
         </main>
         <!-- main part -->
 

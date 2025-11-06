@@ -130,7 +130,8 @@ if (isset($colors[$day])) {
         </footer>
     </div>
 
-    <script src="../../Pages/Darkmode/darkmode.js"></script>
+    <script src="../../Pages/Darkmode/darktheme.js"></script>
+    
 
 </body>
 </html>

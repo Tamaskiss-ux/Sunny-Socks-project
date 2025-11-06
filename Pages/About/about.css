@@ -37,9 +37,37 @@ a
   color: #1e407a;
 }
 
+label
+{
+  text-align: center;
+  vertical-align: middle;
+}
+
+#download
+{
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+#download > p
+{
+  margin-block: auto;
+}
+
+#download > a > img
+{
+  width: 100px;
+}
+
 .main-bg
 {
   background-color: white;
+}
+
+.main
+{
+  background-image: url(../../Fontsandimages/background.png);
+  padding-left: 5%;
 }
 
 .quick-button,
@@ -402,3 +430,13 @@ button.quick-btn {
   }
 }
 
+#timeline
+{
+  margin-top: 15px;
+}
+
+#timeline > a > p
+{
+  color: chocolate;
+  font-size: xx-large;
+}

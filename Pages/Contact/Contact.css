@@ -43,6 +43,13 @@ header
     padding-left: 3%;
 }
 
+header > #headerlogo
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 header > #headerlogo > a
 {
     display: flex;
@@ -52,10 +59,15 @@ header > #headerlogo > a
 
 #headerlogoimg
 {
-    width: 226px;
+    width: 225px;
 }
 
-header > #links
+.button
+{
+    display: none;
+}
+
+#links
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -65,12 +77,33 @@ header > #links
     font-size: 24px;
 }
 
+#links > li > a:hover
+{
+    text-decoration: underline;
+}
+
+#links > li > a:active
+{
+    color: #f15b39;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+#Orange
+{
+    color: #f15b39;
+}
+
 /*Header design end*/
 
 /*main starts*/
 
 main{
-    margin: 5%;
+    padding: 5%;
+    background-image: url(../../Fontsandimages/background.png);
 }
 
 h1{
@@ -262,6 +295,15 @@ textarea {
   color: green;
   font-weight: bold;
   font-size: 0.9rem;
+}
+
+#forofor {
+    color: rebeccapurple; /*For the love of the game*/
+    text-decoration: none;
+}
+
+#forofor:hover {
+    text-decoration: underline;
 }
 
 /*Footer design start*/

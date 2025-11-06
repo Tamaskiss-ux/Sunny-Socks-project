@@ -108,7 +108,8 @@ button
 
 main
 {
-    margin: 5%;
+    background-image: url(../../Fontsandimages/background.png);
+    padding: 5%;
 }
 
 /* Don't change this!*/
@@ -148,6 +149,11 @@ main
 .red
 {
     margin-top: 50%;
+}
+
+.nomargin > h1
+{
+    margin: 0px;
 }
 
 /*Main design end*/

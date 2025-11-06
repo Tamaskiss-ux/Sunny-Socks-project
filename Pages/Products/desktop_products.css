@@ -65,14 +65,10 @@ header > #headerlogo > a
     width: 225px;
 }
 
-@media (min-width: 801px)
+.button
 {
-    .menu
-    {
-        display: none;
-    }
+    display: none;
 }
-
 
 #links
 {
@@ -112,7 +108,8 @@ ul
 
 main
 {
-    margin: 5%;
+    background-image: url("../../Fontsandimages/background.png");
+    padding: 5%;
 }
 
 /* Don't change this!*/

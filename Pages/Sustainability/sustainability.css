@@ -107,8 +107,8 @@ main
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: start;
-    margin: 10px;
-    padding: 20px;
+    padding: 5%;
+    background-image: url(../../Fontsandimages/background.png);
 }
 
 .leftside > h3
@@ -167,10 +167,6 @@ main
 
 /* Don't change this!*/
 
-main
-{
-    margin: 5%;
-}
 
 /* Don't change this!*/
 
