@@ -75,7 +75,6 @@ button
 
 .dropdown
 {
-    margin-top: 5px;
     position: relative;
 }
 
@@ -88,6 +87,7 @@ button
     position: absolute;
     background-color: #fecd3e;
     min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 #links > li
@@ -96,9 +96,20 @@ button
     font-family: "Nexa Bold";
 }
 
+.dropdown:hover #links
+{
+    display: block;
+}
+
+#links > li > a:hover
+{
+    font-family: "Nexa Bold";
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 #links > li > a:active
 {
-    text-decoration: underline;
     color: #f15b39;
 }
 

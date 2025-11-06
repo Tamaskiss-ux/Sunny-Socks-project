@@ -122,14 +122,14 @@ ul
 
 .img
 {
-  width: 85%;
+  margin-bottom: 0px;
+  width: 100%;
 }
 
-.pride-img
+.pride-img > a
 { 
-/*   display: flex; 
-  justify-content: end;
-  align-items: end; */
+  margin-top: auto;
+  margin-left: auto;
 }
 
 .box-1
