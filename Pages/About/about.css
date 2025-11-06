@@ -127,8 +127,9 @@ ul
 
 .pride-img
 { 
-  display: flex; 
+/*   display: flex; 
   justify-content: end;
+  align-items: end; */
 }
 
 .box-1
@@ -146,7 +147,15 @@ ul
 
 .box-2
 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50%;
+}
+
+.box-2 > img
+{
+  width: 60%;
 }
 
 footer
