@@ -65,7 +65,7 @@
         <!--header part-->
         <header>
             <div id="headerlogo">
-                 <a href="../Homepage/Index.html">
+                 <a href="../Homepage/Index.php">
                  <img id="headerlogoimg" src="../../Fontsandimages/Logos/png/sunny_logos_orange.png" alt="Logos Orange">
                  </a>
             </div>
