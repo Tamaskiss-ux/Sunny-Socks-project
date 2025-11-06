@@ -131,7 +131,7 @@
                 </div>
             </div>
             <div id="forofor">
-                <a href="../404 page/404 page.html">Click here to get an error</a>
+                <a href="../404 page/404 page.html">Click here for the 404 page</a>
             </div>
         </main>
         <!-- main part -->

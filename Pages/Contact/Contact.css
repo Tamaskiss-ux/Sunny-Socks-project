@@ -102,7 +102,8 @@ ul
 /*main starts*/
 
 main{
-    margin: 5%;
+    padding: 5%;
+    background-image: url(../../Fontsandimages/background.png);
 }
 
 h1{
@@ -298,6 +299,10 @@ textarea {
 
 #forofor {
     color: rebeccapurple; /*For the love of the game*/
+    text-decoration: none;
+}
+
+#forofor:hover {
     text-decoration: underline;
 }
 
