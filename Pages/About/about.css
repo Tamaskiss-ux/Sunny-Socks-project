@@ -64,6 +64,11 @@ label
   background-color: white;
 }
 
+.main
+{
+  padding-left: 5%;
+}
+
 .quick-button,
 .chat-input button
 {
@@ -424,3 +429,13 @@ button.quick-btn {
   }
 }
 
+#timeline
+{
+  margin-top: 15px;
+}
+
+#timeline > a > p
+{
+  color: chocolate;
+  font-size: xx-large;
+}
