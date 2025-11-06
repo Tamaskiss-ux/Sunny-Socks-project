@@ -1,24 +1,19 @@
-// Create button dynamically
-const toggleButton = document.createElement("img");
+// Create button dynamically if not already in HTML
+const toggleButton = document.createElement("button");
 toggleButton.classList.add("theme-toggle");
-
-// Set initial image (light mode button)
-toggleButton.src = "../../Fontsandimages/Theme/toggle-moon.png";
+toggleButton.textContent = "🌙";
 document.body.appendChild(toggleButton);
 
-// load saved theme
+// Apply saved theme preference (from previous visits)
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "dark") {
   document.body.classList.add("dark-mode");
-  toggleButton.src = "lightmode";
+  toggleButton.textContent = "☀️";
 }
 
-// Toggle theme + image on click
+// Toggle theme on button click
 toggleButton.addEventListener("click", () => {
   const isDarkMode = document.body.classList.toggle("dark-mode");
   localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-
-  toggleButton.src = isDarkMode
-    ? "lightmode"
-    : "darkmode";
+  toggleButton.textContent = isDarkMode ? "☀️" : "🌙";
 });

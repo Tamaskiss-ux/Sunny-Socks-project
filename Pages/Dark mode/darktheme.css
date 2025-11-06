@@ -1,0 +1,26 @@
+.dark-mode {
+  background-color: #285a53;
+  color: #ffffff;
+}
+.dark-mode a {
+  color: white;
+}
+
+.dark-mode .content {
+  background-color: #0f203d;
+}
+
+.dark-mode .content #orange {
+  color: #8b220a;
+}
+
+/* Toggle button positioning */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1000;
+}
