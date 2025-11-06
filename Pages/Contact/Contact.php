@@ -127,7 +127,9 @@
                         </div>
                 </div>
             </div>
-
+            <div id="forofor">
+                <a href="../timeline/timeline.html">Click here for the Timeline</a>
+            </div>
         </main>
         <!-- main part -->
 

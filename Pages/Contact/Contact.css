@@ -264,6 +264,11 @@ textarea {
   font-size: 0.9rem;
 }
 
+#forofor {
+    color: rebeccapurple; /*For the love of the game*/
+    text-decoration: underline;
+}
+
 /*Footer design start*/
 footer
 {
