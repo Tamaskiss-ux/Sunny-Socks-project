@@ -52,7 +52,7 @@
         <!--Don't change things here-->
         <footer>
             <div class="footerleftalign">
-                <p>7811 AP,<br> Raadhuisplein 1,<br> Emmen,<br> Nederland</p>
+                <p>7811 AP, Raadhuisplein 1, Emmen, Nederland</p>
             </div>
             <div class="icons">
                 <p>Follow us:</p>
@@ -68,24 +68,5 @@
             </div>
         </footer>
     </div>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuButton = document.querySelector(".dropdown button");
-        const menuLinks = document.getElementById("links");
-
-    menuButton.addEventListener("click", function (event) {
-        event.stopPropagation();
-        menuLinks.style.display = menuLinks.style.display === "block" ? "none" : "block";
-    });
-
-    document.addEventListener("click", function () {
-        menuLinks.style.display = "none";
-    });
-
-    menuLinks.addEventListener("click", function (event) {
-        event.stopPropagation();
-    });
-    });
-</script>
 </body>
 </html>
