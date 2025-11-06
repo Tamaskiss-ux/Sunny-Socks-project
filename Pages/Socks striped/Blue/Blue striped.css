@@ -73,6 +73,11 @@ header > #links
     font-size: 24px;
 }
 
+ul
+{
+    list-style-type: none;
+}
+
 /*Header design end*/
 
 /*Main design start*/
