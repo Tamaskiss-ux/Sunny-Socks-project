@@ -25,6 +25,7 @@ if (isset($colors[$day])) {
     <link rel="stylesheet" href="desktop_index.css" media="(min-width: 1115px)">
     <link rel="stylesheet" href="mobileportrait_index.css" media="(max-width: 800px)">
     <link rel="stylesheet" href="tabletlandscape_index.css" media="(min-width: 801px) and (max-width: 1115px)">
+    <link rel="stylesheet" href="../Dark mode/darktheme.css">
     <style>
     
     body
@@ -128,5 +129,9 @@ if (isset($colors[$day])) {
             </div>
         </footer>
     </div>
+
+    <script src="../Dark mode/darktheme.js"></script>
+    
+
 </body>
 </html>

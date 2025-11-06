@@ -59,6 +59,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunny | Contact</title>
     <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="../Dark mode/darktheme.css">
 </head>
 <body>
     <div class="content">
@@ -131,7 +132,7 @@
                 </div>
             </div>
             <div id="forofor">
-                <a href="../404 page/404 page.html">Click here to get an error</a>
+                <a href="../404 page/404 page.html">Click here for the 404 page</a>
             </div>
         </main>
         <!-- main part -->
@@ -155,5 +156,7 @@
         <!--footer part-->
 
     </div>
+
+    <script src="../Dark mode/darktheme.js"></script>
 </body>
 </html>
