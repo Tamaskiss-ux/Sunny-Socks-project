@@ -59,6 +59,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunny | Contact</title>
     <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="../Dark mode/darktheme.css">
 </head>
 <body>
     <div class="content">
@@ -155,5 +156,7 @@
         <!--footer part-->
 
     </div>
+
+    <script src="../Dark mode/darktheme.js"></script>
 </body>
 </html>

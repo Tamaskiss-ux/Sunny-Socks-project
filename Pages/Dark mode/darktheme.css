@@ -18,6 +18,19 @@
   color: #8b220a;
 }
 
+#pride-bg {
+  background-image: none;
+}
+
+.dark-mode .main {
+  background-image: none;
+  background-color: #0f203d;
+}
+
+.dark-mode .box-1 p {
+  color: white;
+}
+
 /* Toggle button positioning */
 .theme-toggle {
   position: fixed;
