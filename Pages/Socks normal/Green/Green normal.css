@@ -53,6 +53,14 @@ header > #headerlogo
     justify-content: flex-start;
 }
 
+header > #headerlogo > a
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
 #headerlogoimg
 {
     width: 225px;
@@ -89,7 +97,8 @@ ul
 /* Don't change this!*/
 main
 {
-    margin: 5%;
+    padding: 5%;
+    background-image: url(../../../Fontsandimages/background.png);
 }
 /* Don't change this!*/
 

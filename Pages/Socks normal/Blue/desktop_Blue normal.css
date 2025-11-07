@@ -103,7 +103,8 @@ ul
 /* Don't change this!*/
 main
 {
-    margin: 5%;
+    padding: 5%;
+    background-image: url(../../../Fontsandimages/background.png);
 }
 /* Don't change this!*/
 
